@@ -1,0 +1,1097 @@
+fecha,dia_semana,es_fin_de_semana,es_feriado,clima_estado,temperatura_c,probabilidad_lluvia_pct,cantidad_visitantes,zona
+2023-01-01,domingo,True,True,parcialmente nublado,26.2,32,840,Remanzo Azul
+2023-01-02,lunes,False,False,parcialmente nublado,28.1,11,184,Remanzo Azul
+2023-01-03,martes,False,False,soleado,28.6,9,229,Remanzo Azul
+2023-01-04,miércoles,False,False,parcialmente nublado,26.5,21,215,Remanzo Azul
+2023-01-05,jueves,False,False,soleado,27.9,6,254,Remanzo Azul
+2023-01-06,viernes,False,False,nublado,26.6,57,161,Remanzo Azul
+2023-01-07,sábado,True,False,soleado,28.7,0,413,Remanzo Azul
+2023-01-08,domingo,True,False,parcialmente nublado,31.2,27,402,Remanzo Azul
+2023-01-09,lunes,False,False,parcialmente nublado,28.2,23,215,Remanzo Azul
+2023-01-10,martes,False,False,tormenta,25.1,96,49,Remanzo Azul
+2023-01-11,miércoles,False,False,nublado,25.9,36,142,Remanzo Azul
+2023-01-12,jueves,False,False,parcialmente nublado,28.9,10,184,Remanzo Azul
+2023-01-13,viernes,False,False,parcialmente nublado,26.4,32,234,Remanzo Azul
+2023-01-14,sábado,True,False,lluvioso,26.7,74,174,Remanzo Azul
+2023-01-15,domingo,True,False,lluvioso,24.6,74,184,Remanzo Azul
+2023-01-16,lunes,False,False,soleado,28.1,3,273,Remanzo Azul
+2023-01-17,martes,False,False,nublado,29.3,42,178,Remanzo Azul
+2023-01-18,miércoles,False,False,soleado,28.1,3,236,Remanzo Azul
+2023-01-19,jueves,False,False,parcialmente nublado,28.2,29,218,Remanzo Azul
+2023-01-20,viernes,False,False,soleado,26.8,4,253,Remanzo Azul
+2023-01-21,sábado,True,False,soleado,29.5,7,385,Remanzo Azul
+2023-01-22,domingo,True,False,tormenta,22.8,85,76,Remanzo Azul
+2023-01-23,lunes,False,False,tormenta,24.6,86,45,Remanzo Azul
+2023-01-24,martes,False,False,nublado,30.1,52,124,Remanzo Azul
+2023-01-25,miércoles,False,False,soleado,29.3,3,283,Remanzo Azul
+2023-01-26,jueves,False,False,lluvioso,25.8,62,103,Remanzo Azul
+2023-01-27,viernes,False,False,parcialmente nublado,29.7,29,183,Remanzo Azul
+2023-01-28,sábado,True,False,lluvioso,27.1,84,165,Remanzo Azul
+2023-01-29,domingo,True,False,soleado,32.7,6,433,Remanzo Azul
+2023-01-30,lunes,False,False,nublado,28.1,38,172,Remanzo Azul
+2023-01-31,martes,False,False,lluvioso,27.3,65,113,Remanzo Azul
+2023-02-01,miércoles,False,False,nublado,28.3,45,138,Remanzo Azul
+2023-02-02,jueves,False,False,soleado,30.6,3,232,Remanzo Azul
+2023-02-03,viernes,False,False,lluvioso,25.6,81,101,Remanzo Azul
+2023-02-04,sábado,True,False,nublado,28.2,50,289,Remanzo Azul
+2023-02-05,domingo,True,False,nublado,26.6,32,274,Remanzo Azul
+2023-02-06,lunes,False,False,tormenta,23.6,89,44,Remanzo Azul
+2023-02-07,martes,False,False,tormenta,26.4,89,45,Remanzo Azul
+2023-02-08,miércoles,False,False,soleado,30.7,1,192,Remanzo Azul
+2023-02-09,jueves,False,False,tormenta,24.5,92,53,Remanzo Azul
+2023-02-10,viernes,False,False,lluvioso,25.8,62,115,Remanzo Azul
+2023-02-11,sábado,True,False,lluvioso,27.0,79,186,Remanzo Azul
+2023-02-12,domingo,True,False,soleado,30.4,2,407,Remanzo Azul
+2023-02-13,lunes,False,False,soleado,30.5,8,245,Remanzo Azul
+2023-02-14,martes,False,False,parcialmente nublado,27.2,30,218,Remanzo Azul
+2023-02-15,miércoles,False,False,nublado,31.5,49,198,Remanzo Azul
+2023-02-16,jueves,False,False,tormenta,24.6,94,34,Remanzo Azul
+2023-02-17,viernes,False,False,tormenta,26.8,85,50,Remanzo Azul
+2023-02-18,sábado,True,False,parcialmente nublado,29.4,17,343,Remanzo Azul
+2023-02-19,domingo,True,False,tormenta,26.7,94,92,Remanzo Azul
+2023-02-20,lunes,False,False,parcialmente nublado,29.5,25,254,Remanzo Azul
+2023-02-21,martes,False,False,soleado,28.9,9,205,Remanzo Azul
+2023-02-22,miércoles,False,False,parcialmente nublado,33.7,25,209,Remanzo Azul
+2023-02-23,jueves,False,False,tormenta,26.8,87,50,Remanzo Azul
+2023-02-24,viernes,False,False,nublado,31.5,32,124,Remanzo Azul
+2023-02-25,sábado,True,False,lluvioso,26.7,62,151,Remanzo Azul
+2023-02-26,domingo,True,False,soleado,32.6,9,390,Remanzo Azul
+2023-02-27,lunes,False,False,soleado,32.7,7,285,Remanzo Azul
+2023-02-28,martes,False,False,parcialmente nublado,30.7,26,189,Remanzo Azul
+2023-03-01,miércoles,False,False,parcialmente nublado,29.3,21,236,Remanzo Azul
+2023-03-02,jueves,False,False,lluvioso,26.9,84,83,Remanzo Azul
+2023-03-03,viernes,False,False,parcialmente nublado,30.6,28,204,Remanzo Azul
+2023-03-04,sábado,True,False,soleado,33.0,4,519,Remanzo Azul
+2023-03-05,domingo,True,False,soleado,32.1,1,496,Remanzo Azul
+2023-03-06,lunes,False,False,lluvioso,27.8,77,100,Remanzo Azul
+2023-03-07,martes,False,False,lluvioso,29.1,63,93,Remanzo Azul
+2023-03-08,miércoles,False,False,parcialmente nublado,27.8,28,246,Remanzo Azul
+2023-03-09,jueves,False,False,parcialmente nublado,32.0,17,159,Remanzo Azul
+2023-03-10,viernes,False,False,lluvioso,28.4,60,100,Remanzo Azul
+2023-03-11,sábado,True,False,parcialmente nublado,28.0,30,377,Remanzo Azul
+2023-03-12,domingo,True,False,parcialmente nublado,29.8,26,361,Remanzo Azul
+2023-03-13,lunes,False,False,tormenta,25.8,94,53,Remanzo Azul
+2023-03-14,martes,False,False,tormenta,26.7,88,50,Remanzo Azul
+2023-03-15,miércoles,False,False,parcialmente nublado,31.6,18,162,Remanzo Azul
+2023-03-16,jueves,False,False,soleado,31.1,2,196,Remanzo Azul
+2023-03-17,viernes,False,False,nublado,30.2,34,159,Remanzo Azul
+2023-03-18,sábado,True,False,parcialmente nublado,30.8,31,306,Remanzo Azul
+2023-03-19,domingo,True,False,lluvioso,25.0,82,150,Remanzo Azul
+2023-03-20,lunes,False,False,lluvioso,29.9,64,102,Remanzo Azul
+2023-03-21,martes,False,False,tormenta,26.4,97,48,Remanzo Azul
+2023-03-22,miércoles,False,False,nublado,30.3,36,140,Remanzo Azul
+2023-03-23,jueves,False,False,nublado,29.6,41,192,Remanzo Azul
+2023-03-24,viernes,False,False,lluvioso,26.7,80,96,Remanzo Azul
+2023-03-25,sábado,True,False,lluvioso,27.5,61,161,Remanzo Azul
+2023-03-26,domingo,True,False,parcialmente nublado,31.5,34,346,Remanzo Azul
+2023-03-27,lunes,False,False,tormenta,27.3,94,35,Remanzo Azul
+2023-03-28,martes,False,False,tormenta,24.9,89,45,Remanzo Azul
+2023-03-29,miércoles,False,False,parcialmente nublado,30.9,24,173,Remanzo Azul
+2023-03-30,jueves,False,False,nublado,31.4,33,146,Remanzo Azul
+2023-03-31,viernes,False,False,lluvioso,30.5,80,95,Remanzo Azul
+2023-04-01,sábado,True,False,soleado,31.7,5,409,Remanzo Azul
+2023-04-02,domingo,True,False,soleado,32.1,8,300,Remanzo Azul
+2023-04-03,lunes,False,False,soleado,31.9,0,237,Remanzo Azul
+2023-04-04,martes,False,False,tormenta,28.0,86,45,Remanzo Azul
+2023-04-05,miércoles,False,False,nublado,30.2,32,168,Remanzo Azul
+2023-04-06,jueves,False,False,soleado,31.1,6,260,Remanzo Azul
+2023-04-07,viernes,False,False,soleado,34.0,2,269,Remanzo Azul
+2023-04-08,sábado,True,False,parcialmente nublado,31.0,26,421,Remanzo Azul
+2023-04-09,domingo,True,False,soleado,33.6,1,348,Remanzo Azul
+2023-04-10,lunes,False,False,parcialmente nublado,30.0,15,201,Remanzo Azul
+2023-04-11,martes,False,False,lluvioso,28.2,81,110,Remanzo Azul
+2023-04-12,miércoles,False,False,parcialmente nublado,31.4,24,221,Remanzo Azul
+2023-04-13,jueves,False,False,soleado,31.1,5,260,Remanzo Azul
+2023-04-14,viernes,False,False,nublado,31.6,59,167,Remanzo Azul
+2023-04-15,sábado,True,False,parcialmente nublado,29.6,33,354,Remanzo Azul
+2023-04-16,domingo,True,False,parcialmente nublado,31.2,10,309,Remanzo Azul
+2023-04-17,lunes,False,False,soleado,34.8,2,225,Remanzo Azul
+2023-04-18,martes,False,False,tormenta,27.3,87,42,Remanzo Azul
+2023-04-19,miércoles,False,False,lluvioso,28.6,89,105,Remanzo Azul
+2023-04-20,jueves,False,False,soleado,32.5,9,273,Remanzo Azul
+2023-04-21,viernes,False,False,parcialmente nublado,30.0,15,239,Remanzo Azul
+2023-04-22,sábado,True,False,parcialmente nublado,30.7,11,343,Remanzo Azul
+2023-04-23,domingo,True,False,soleado,29.0,2,484,Remanzo Azul
+2023-04-24,lunes,False,False,soleado,32.4,3,279,Remanzo Azul
+2023-04-25,martes,False,False,soleado,30.4,6,219,Remanzo Azul
+2023-04-26,miércoles,False,False,nublado,31.2,42,161,Remanzo Azul
+2023-04-27,jueves,False,False,parcialmente nublado,30.3,14,269,Remanzo Azul
+2023-04-28,viernes,False,False,nublado,30.2,33,188,Remanzo Azul
+2023-04-29,sábado,True,False,parcialmente nublado,28.8,24,323,Remanzo Azul
+2023-04-30,domingo,True,False,soleado,31.9,8,544,Remanzo Azul
+2023-05-01,lunes,False,True,parcialmente nublado,31.6,18,515,Remanzo Azul
+2023-05-02,martes,False,False,soleado,31.2,9,229,Remanzo Azul
+2023-05-03,miércoles,False,False,lluvioso,27.6,74,112,Remanzo Azul
+2023-05-04,jueves,False,False,nublado,29.8,32,150,Remanzo Azul
+2023-05-05,viernes,False,False,lluvioso,27.4,86,109,Remanzo Azul
+2023-05-06,sábado,True,False,lluvioso,28.0,83,137,Remanzo Azul
+2023-05-07,domingo,True,False,parcialmente nublado,32.2,30,399,Remanzo Azul
+2023-05-08,lunes,False,False,tormenta,26.1,97,39,Remanzo Azul
+2023-05-09,martes,False,False,parcialmente nublado,31.5,22,199,Remanzo Azul
+2023-05-10,miércoles,False,False,parcialmente nublado,31.1,11,182,Remanzo Azul
+2023-05-11,jueves,False,False,parcialmente nublado,28.4,17,212,Remanzo Azul
+2023-05-12,viernes,False,False,nublado,29.4,52,156,Remanzo Azul
+2023-05-13,sábado,True,False,lluvioso,26.9,83,189,Remanzo Azul
+2023-05-14,domingo,True,False,nublado,28.1,37,292,Remanzo Azul
+2023-05-15,lunes,False,False,soleado,32.0,3,256,Remanzo Azul
+2023-05-16,martes,False,False,parcialmente nublado,28.9,16,201,Remanzo Azul
+2023-05-17,miércoles,False,False,soleado,31.5,1,207,Remanzo Azul
+2023-05-18,jueves,False,False,soleado,30.2,6,202,Remanzo Azul
+2023-05-19,viernes,False,False,soleado,30.3,4,279,Remanzo Azul
+2023-05-20,sábado,True,False,nublado,29.7,48,274,Remanzo Azul
+2023-05-21,domingo,True,False,nublado,27.5,51,329,Remanzo Azul
+2023-05-22,lunes,False,False,tormenta,24.4,86,46,Remanzo Azul
+2023-05-23,martes,False,False,parcialmente nublado,29.4,26,241,Remanzo Azul
+2023-05-24,miércoles,False,False,lluvioso,27.2,69,111,Remanzo Azul
+2023-05-25,jueves,False,False,lluvioso,28.5,60,93,Remanzo Azul
+2023-05-26,viernes,False,False,soleado,30.5,3,278,Remanzo Azul
+2023-05-27,sábado,True,False,parcialmente nublado,31.7,31,339,Remanzo Azul
+2023-05-28,domingo,True,False,soleado,29.2,3,420,Remanzo Azul
+2023-05-29,lunes,False,False,parcialmente nublado,30.5,18,190,Remanzo Azul
+2023-05-30,martes,False,False,parcialmente nublado,30.0,16,247,Remanzo Azul
+2023-05-31,miércoles,False,False,nublado,26.7,48,180,Remanzo Azul
+2023-06-01,jueves,False,False,nublado,28.3,37,200,Remanzo Azul
+2023-06-02,viernes,False,False,parcialmente nublado,30.0,27,218,Remanzo Azul
+2023-06-03,sábado,True,False,parcialmente nublado,29.1,25,336,Remanzo Azul
+2023-06-04,domingo,True,False,parcialmente nublado,26.5,16,340,Remanzo Azul
+2023-06-05,lunes,False,False,lluvioso,26.3,77,107,Remanzo Azul
+2023-06-06,martes,False,False,nublado,27.9,57,153,Remanzo Azul
+2023-06-07,miércoles,False,False,nublado,24.7,36,187,Remanzo Azul
+2023-06-08,jueves,False,False,parcialmente nublado,27.9,10,233,Remanzo Azul
+2023-06-09,viernes,False,False,nublado,26.3,42,116,Remanzo Azul
+2023-06-10,sábado,True,False,lluvioso,27.6,75,154,Remanzo Azul
+2023-06-11,domingo,True,False,soleado,29.1,6,403,Remanzo Azul
+2023-06-12,lunes,False,False,soleado,27.8,1,234,Remanzo Azul
+2023-06-13,martes,False,False,soleado,27.6,7,208,Remanzo Azul
+2023-06-14,miércoles,False,False,nublado,28.1,43,132,Remanzo Azul
+2023-06-15,jueves,False,False,lluvioso,25.7,72,91,Remanzo Azul
+2023-06-16,viernes,False,False,soleado,29.2,0,226,Remanzo Azul
+2023-06-17,sábado,True,False,soleado,29.3,1,355,Remanzo Azul
+2023-06-18,domingo,True,False,nublado,29.9,33,253,Remanzo Azul
+2023-06-19,lunes,False,False,soleado,29.2,8,260,Remanzo Azul
+2023-06-20,martes,False,False,soleado,30.2,1,237,Remanzo Azul
+2023-06-21,miércoles,False,False,soleado,29.5,5,295,Remanzo Azul
+2023-06-22,jueves,False,False,nublado,27.0,53,182,Remanzo Azul
+2023-06-23,viernes,False,False,parcialmente nublado,28.4,28,223,Remanzo Azul
+2023-06-24,sábado,True,False,nublado,27.4,39,299,Remanzo Azul
+2023-06-25,domingo,True,False,parcialmente nublado,28.1,34,345,Remanzo Azul
+2023-06-26,lunes,False,False,soleado,30.7,1,219,Remanzo Azul
+2023-06-27,martes,False,False,parcialmente nublado,28.0,17,208,Remanzo Azul
+2023-06-28,miércoles,False,False,nublado,26.2,38,149,Remanzo Azul
+2023-06-29,jueves,False,True,soleado,29.8,5,512,Remanzo Azul
+2023-06-30,viernes,False,False,lluvioso,25.7,60,92,Remanzo Azul
+2023-07-01,sábado,True,False,parcialmente nublado,26.9,20,368,Remanzo Azul
+2023-07-02,domingo,True,False,parcialmente nublado,28.4,11,398,Remanzo Azul
+2023-07-03,lunes,False,False,lluvioso,26.5,73,100,Remanzo Azul
+2023-07-04,martes,False,False,parcialmente nublado,27.1,24,179,Remanzo Azul
+2023-07-05,miércoles,False,False,lluvioso,24.4,61,117,Remanzo Azul
+2023-07-06,jueves,False,False,soleado,29.3,1,263,Remanzo Azul
+2023-07-07,viernes,False,False,lluvioso,25.0,86,96,Remanzo Azul
+2023-07-08,sábado,True,False,parcialmente nublado,27.8,12,341,Remanzo Azul
+2023-07-09,domingo,True,False,parcialmente nublado,26.3,25,428,Remanzo Azul
+2023-07-10,lunes,False,False,parcialmente nublado,28.1,20,164,Remanzo Azul
+2023-07-11,martes,False,False,parcialmente nublado,25.9,20,247,Remanzo Azul
+2023-07-12,miércoles,False,False,lluvioso,24.8,76,105,Remanzo Azul
+2023-07-13,jueves,False,False,tormenta,23.4,92,39,Remanzo Azul
+2023-07-14,viernes,False,False,soleado,28.6,0,183,Remanzo Azul
+2023-07-15,sábado,True,False,nublado,24.1,55,239,Remanzo Azul
+2023-07-16,domingo,True,False,nublado,25.2,40,261,Remanzo Azul
+2023-07-17,lunes,False,False,nublado,27.8,41,189,Remanzo Azul
+2023-07-18,martes,False,False,parcialmente nublado,26.0,20,234,Remanzo Azul
+2023-07-19,miércoles,False,False,parcialmente nublado,26.5,19,244,Remanzo Azul
+2023-07-20,jueves,False,False,soleado,27.3,2,229,Remanzo Azul
+2023-07-21,viernes,False,False,parcialmente nublado,26.3,21,233,Remanzo Azul
+2023-07-22,sábado,True,False,parcialmente nublado,27.1,19,268,Remanzo Azul
+2023-07-23,domingo,True,False,soleado,29.2,9,408,Remanzo Azul
+2023-07-24,lunes,False,False,parcialmente nublado,26.4,26,246,Remanzo Azul
+2023-07-25,martes,False,False,soleado,29.7,1,198,Remanzo Azul
+2023-07-26,miércoles,False,False,tormenta,21.7,89,38,Remanzo Azul
+2023-07-27,jueves,False,False,parcialmente nublado,26.7,19,190,Remanzo Azul
+2023-07-28,viernes,False,True,parcialmente nublado,25.3,31,468,Remanzo Azul
+2023-07-29,sábado,True,True,parcialmente nublado,28.3,15,895,Remanzo Azul
+2023-07-30,domingo,True,False,lluvioso,24.6,83,143,Remanzo Azul
+2023-07-31,lunes,False,False,lluvioso,21.7,75,96,Remanzo Azul
+2023-08-01,martes,False,False,soleado,26.4,4,255,Remanzo Azul
+2023-08-02,miércoles,False,False,parcialmente nublado,25.5,20,198,Remanzo Azul
+2023-08-03,jueves,False,False,parcialmente nublado,26.8,24,231,Remanzo Azul
+2023-08-04,viernes,False,False,parcialmente nublado,25.5,10,196,Remanzo Azul
+2023-08-05,sábado,True,False,soleado,29.4,3,451,Remanzo Azul
+2023-08-06,domingo,True,False,soleado,27.4,8,436,Remanzo Azul
+2023-08-07,lunes,False,False,parcialmente nublado,24.7,25,217,Remanzo Azul
+2023-08-08,martes,False,False,parcialmente nublado,24.9,24,255,Remanzo Azul
+2023-08-09,miércoles,False,False,parcialmente nublado,25.6,27,212,Remanzo Azul
+2023-08-10,jueves,False,False,nublado,24.1,33,167,Remanzo Azul
+2023-08-11,viernes,False,False,soleado,25.8,4,291,Remanzo Azul
+2023-08-12,sábado,True,False,soleado,25.1,0,459,Remanzo Azul
+2023-08-13,domingo,True,False,nublado,26.4,58,290,Remanzo Azul
+2023-08-14,lunes,False,False,lluvioso,24.0,72,97,Remanzo Azul
+2023-08-15,martes,False,False,soleado,28.1,4,204,Remanzo Azul
+2023-08-16,miércoles,False,False,soleado,25.8,8,288,Remanzo Azul
+2023-08-17,jueves,False,False,soleado,27.1,9,223,Remanzo Azul
+2023-08-18,viernes,False,False,parcialmente nublado,23.4,24,211,Remanzo Azul
+2023-08-19,sábado,True,False,nublado,24.0,33,288,Remanzo Azul
+2023-08-20,domingo,True,False,soleado,26.7,4,366,Remanzo Azul
+2023-08-21,lunes,False,False,nublado,21.9,31,170,Remanzo Azul
+2023-08-22,martes,False,False,soleado,26.5,9,238,Remanzo Azul
+2023-08-23,miércoles,False,False,soleado,24.7,3,256,Remanzo Azul
+2023-08-24,jueves,False,False,nublado,24.7,51,118,Remanzo Azul
+2023-08-25,viernes,False,False,parcialmente nublado,25.8,34,236,Remanzo Azul
+2023-08-26,sábado,True,False,nublado,22.1,53,288,Remanzo Azul
+2023-08-27,domingo,True,False,soleado,25.7,3,427,Remanzo Azul
+2023-08-28,lunes,False,False,soleado,27.1,0,232,Remanzo Azul
+2023-08-29,martes,False,False,soleado,27.9,9,290,Remanzo Azul
+2023-08-30,miércoles,False,True,soleado,25.9,6,513,Remanzo Azul
+2023-08-31,jueves,False,False,soleado,27.6,6,275,Remanzo Azul
+2023-09-01,viernes,False,False,parcialmente nublado,25.7,17,200,Remanzo Azul
+2023-09-02,sábado,True,False,soleado,25.0,8,378,Remanzo Azul
+2023-09-03,domingo,True,False,lluvioso,21.7,67,172,Remanzo Azul
+2023-09-04,lunes,False,False,nublado,23.5,31,132,Remanzo Azul
+2023-09-05,martes,False,False,nublado,25.8,51,170,Remanzo Azul
+2023-09-06,miércoles,False,False,tormenta,21.9,98,40,Remanzo Azul
+2023-09-07,jueves,False,False,parcialmente nublado,21.9,28,195,Remanzo Azul
+2023-09-08,viernes,False,False,nublado,22.8,35,177,Remanzo Azul
+2023-09-09,sábado,True,False,nublado,24.1,31,309,Remanzo Azul
+2023-09-10,domingo,True,False,soleado,25.4,8,355,Remanzo Azul
+2023-09-11,lunes,False,False,parcialmente nublado,23.7,13,167,Remanzo Azul
+2023-09-12,martes,False,False,lluvioso,22.5,71,99,Remanzo Azul
+2023-09-13,miércoles,False,False,parcialmente nublado,27.3,19,224,Remanzo Azul
+2023-09-14,jueves,False,False,soleado,26.8,4,228,Remanzo Azul
+2023-09-15,viernes,False,False,soleado,26.2,9,259,Remanzo Azul
+2023-09-16,sábado,True,False,lluvioso,22.1,79,185,Remanzo Azul
+2023-09-17,domingo,True,False,tormenta,21.7,88,86,Remanzo Azul
+2023-09-18,lunes,False,False,soleado,26.1,3,258,Remanzo Azul
+2023-09-19,martes,False,False,nublado,24.2,48,137,Remanzo Azul
+2023-09-20,miércoles,False,False,soleado,26.0,1,200,Remanzo Azul
+2023-09-21,jueves,False,False,soleado,25.3,0,234,Remanzo Azul
+2023-09-22,viernes,False,False,lluvioso,20.2,65,110,Remanzo Azul
+2023-09-23,sábado,True,False,nublado,23.0,56,319,Remanzo Azul
+2023-09-24,domingo,True,False,lluvioso,23.1,86,184,Remanzo Azul
+2023-09-25,lunes,False,False,soleado,27.1,9,220,Remanzo Azul
+2023-09-26,martes,False,False,soleado,26.5,4,274,Remanzo Azul
+2023-09-27,miércoles,False,False,parcialmente nublado,25.5,29,175,Remanzo Azul
+2023-09-28,jueves,False,False,soleado,25.5,1,259,Remanzo Azul
+2023-09-29,viernes,False,False,parcialmente nublado,26.3,18,202,Remanzo Azul
+2023-09-30,sábado,True,False,lluvioso,22.4,70,165,Remanzo Azul
+2023-10-01,domingo,True,False,nublado,23.8,53,302,Remanzo Azul
+2023-10-02,lunes,False,False,soleado,26.0,7,251,Remanzo Azul
+2023-10-03,martes,False,False,nublado,22.5,49,187,Remanzo Azul
+2023-10-04,miércoles,False,False,nublado,23.0,59,154,Remanzo Azul
+2023-10-05,jueves,False,False,soleado,26.7,1,281,Remanzo Azul
+2023-10-06,viernes,False,False,soleado,25.8,8,240,Remanzo Azul
+2023-10-07,sábado,True,False,nublado,25.3,39,335,Remanzo Azul
+2023-10-08,domingo,True,True,lluvioso,21.3,81,328,Remanzo Azul
+2023-10-09,lunes,False,False,soleado,25.8,0,235,Remanzo Azul
+2023-10-10,martes,False,False,lluvioso,21.8,67,102,Remanzo Azul
+2023-10-11,miércoles,False,False,nublado,22.3,40,172,Remanzo Azul
+2023-10-12,jueves,False,False,parcialmente nublado,23.9,24,215,Remanzo Azul
+2023-10-13,viernes,False,False,soleado,27.6,5,244,Remanzo Azul
+2023-10-14,sábado,True,False,parcialmente nublado,25.3,21,278,Remanzo Azul
+2023-10-15,domingo,True,False,soleado,25.8,0,412,Remanzo Azul
+2023-10-16,lunes,False,False,soleado,26.4,1,237,Remanzo Azul
+2023-10-17,martes,False,False,nublado,22.2,42,171,Remanzo Azul
+2023-10-18,miércoles,False,False,parcialmente nublado,24.9,23,213,Remanzo Azul
+2023-10-19,jueves,False,False,nublado,25.0,53,177,Remanzo Azul
+2023-10-20,viernes,False,False,soleado,28.0,9,207,Remanzo Azul
+2023-10-21,sábado,True,False,parcialmente nublado,26.7,19,320,Remanzo Azul
+2023-10-22,domingo,True,False,soleado,24.5,6,331,Remanzo Azul
+2023-10-23,lunes,False,False,soleado,28.1,3,301,Remanzo Azul
+2023-10-24,martes,False,False,parcialmente nublado,24.4,26,209,Remanzo Azul
+2023-10-25,miércoles,False,False,nublado,24.4,42,152,Remanzo Azul
+2023-10-26,jueves,False,False,soleado,25.3,3,239,Remanzo Azul
+2023-10-27,viernes,False,False,nublado,22.7,35,183,Remanzo Azul
+2023-10-28,sábado,True,False,nublado,23.6,55,244,Remanzo Azul
+2023-10-29,domingo,True,False,soleado,24.7,0,355,Remanzo Azul
+2023-10-30,lunes,False,False,lluvioso,21.9,76,105,Remanzo Azul
+2023-10-31,martes,False,False,parcialmente nublado,23.6,16,206,Remanzo Azul
+2023-11-01,miércoles,False,True,parcialmente nublado,26.0,23,521,Remanzo Azul
+2023-11-02,jueves,False,False,parcialmente nublado,24.9,33,227,Remanzo Azul
+2023-11-03,viernes,False,False,soleado,25.3,7,215,Remanzo Azul
+2023-11-04,sábado,True,False,parcialmente nublado,24.4,22,382,Remanzo Azul
+2023-11-05,domingo,True,False,soleado,23.6,6,457,Remanzo Azul
+2023-11-06,lunes,False,False,parcialmente nublado,26.5,23,198,Remanzo Azul
+2023-11-07,martes,False,False,tormenta,22.1,87,41,Remanzo Azul
+2023-11-08,miércoles,False,False,tormenta,19.7,88,51,Remanzo Azul
+2023-11-09,jueves,False,False,parcialmente nublado,25.5,26,192,Remanzo Azul
+2023-11-10,viernes,False,False,lluvioso,22.3,61,101,Remanzo Azul
+2023-11-11,sábado,True,False,soleado,26.4,4,470,Remanzo Azul
+2023-11-12,domingo,True,False,nublado,21.4,41,242,Remanzo Azul
+2023-11-13,lunes,False,False,parcialmente nublado,25.1,26,241,Remanzo Azul
+2023-11-14,martes,False,False,parcialmente nublado,26.3,17,227,Remanzo Azul
+2023-11-15,miércoles,False,False,soleado,28.8,0,254,Remanzo Azul
+2023-11-16,jueves,False,False,soleado,26.0,2,199,Remanzo Azul
+2023-11-17,viernes,False,False,lluvioso,24.5,71,92,Remanzo Azul
+2023-11-18,sábado,True,False,soleado,28.5,4,378,Remanzo Azul
+2023-11-19,domingo,True,False,parcialmente nublado,25.6,29,388,Remanzo Azul
+2023-11-20,lunes,False,False,soleado,26.7,7,231,Remanzo Azul
+2023-11-21,martes,False,False,soleado,26.1,0,276,Remanzo Azul
+2023-11-22,miércoles,False,False,nublado,25.1,33,147,Remanzo Azul
+2023-11-23,jueves,False,False,lluvioso,23.4,77,95,Remanzo Azul
+2023-11-24,viernes,False,False,nublado,24.4,53,124,Remanzo Azul
+2023-11-25,sábado,True,False,lluvioso,22.1,89,158,Remanzo Azul
+2023-11-26,domingo,True,False,soleado,26.8,1,367,Remanzo Azul
+2023-11-27,lunes,False,False,nublado,25.4,49,169,Remanzo Azul
+2023-11-28,martes,False,False,soleado,26.8,6,249,Remanzo Azul
+2023-11-29,miércoles,False,False,tormenta,23.5,93,43,Remanzo Azul
+2023-11-30,jueves,False,False,soleado,28.1,0,248,Remanzo Azul
+2023-12-01,viernes,False,False,lluvioso,24.0,73,96,Remanzo Azul
+2023-12-02,sábado,True,False,soleado,26.4,2,398,Remanzo Azul
+2023-12-03,domingo,True,False,soleado,28.0,6,423,Remanzo Azul
+2023-12-04,lunes,False,False,tormenta,23.3,99,50,Remanzo Azul
+2023-12-05,martes,False,False,nublado,25.9,49,205,Remanzo Azul
+2023-12-06,miércoles,False,False,lluvioso,22.7,79,100,Remanzo Azul
+2023-12-07,jueves,False,False,lluvioso,24.6,68,117,Remanzo Azul
+2023-12-08,viernes,False,True,nublado,25.2,59,365,Remanzo Azul
+2023-12-09,sábado,True,False,parcialmente nublado,26.8,14,411,Remanzo Azul
+2023-12-10,domingo,True,False,nublado,25.8,53,297,Remanzo Azul
+2023-12-11,lunes,False,False,nublado,23.3,55,149,Remanzo Azul
+2023-12-12,martes,False,False,soleado,27.9,8,262,Remanzo Azul
+2023-12-13,miércoles,False,False,soleado,29.0,2,223,Remanzo Azul
+2023-12-14,jueves,False,False,nublado,25.7,35,195,Remanzo Azul
+2023-12-15,viernes,False,False,soleado,28.3,7,229,Remanzo Azul
+2023-12-16,sábado,True,False,parcialmente nublado,29.5,25,331,Remanzo Azul
+2023-12-17,domingo,True,False,nublado,27.2,40,279,Remanzo Azul
+2023-12-18,lunes,False,False,parcialmente nublado,24.0,20,171,Remanzo Azul
+2023-12-19,martes,False,False,parcialmente nublado,27.1,30,188,Remanzo Azul
+2023-12-20,miércoles,False,False,nublado,25.9,41,151,Remanzo Azul
+2023-12-21,jueves,False,False,lluvioso,23.1,66,109,Remanzo Azul
+2023-12-22,viernes,False,False,lluvioso,24.7,63,92,Remanzo Azul
+2023-12-23,sábado,True,False,lluvioso,23.8,60,174,Remanzo Azul
+2023-12-24,domingo,True,False,soleado,29.3,8,405,Remanzo Azul
+2023-12-25,lunes,False,True,nublado,24.8,36,373,Remanzo Azul
+2023-12-26,martes,False,False,lluvioso,24.8,68,90,Remanzo Azul
+2023-12-27,miércoles,False,False,nublado,25.3,50,160,Remanzo Azul
+2023-12-28,jueves,False,False,soleado,30.4,5,239,Remanzo Azul
+2023-12-29,viernes,False,False,parcialmente nublado,27.5,21,187,Remanzo Azul
+2023-12-30,sábado,True,False,lluvioso,24.8,85,185,Remanzo Azul
+2023-12-31,domingo,True,False,nublado,27.7,53,313,Remanzo Azul
+2024-01-01,lunes,False,True,nublado,26.4,57,392,Remanzo Azul
+2024-01-02,martes,False,False,parcialmente nublado,28.1,15,240,Remanzo Azul
+2024-01-03,miércoles,False,False,lluvioso,27.0,77,123,Remanzo Azul
+2024-01-04,jueves,False,False,soleado,29.2,3,255,Remanzo Azul
+2024-01-05,viernes,False,False,soleado,27.1,4,233,Remanzo Azul
+2024-01-06,sábado,True,False,parcialmente nublado,28.0,26,351,Remanzo Azul
+2024-01-07,domingo,True,False,tormenta,22.5,93,63,Remanzo Azul
+2024-01-08,lunes,False,False,nublado,28.8,32,167,Remanzo Azul
+2024-01-09,martes,False,False,parcialmente nublado,26.4,13,186,Remanzo Azul
+2024-01-10,miércoles,False,False,nublado,26.4,57,173,Remanzo Azul
+2024-01-11,jueves,False,False,parcialmente nublado,27.8,30,243,Remanzo Azul
+2024-01-12,viernes,False,False,parcialmente nublado,26.3,11,213,Remanzo Azul
+2024-01-13,sábado,True,False,parcialmente nublado,27.4,29,355,Remanzo Azul
+2024-01-14,domingo,True,False,tormenta,24.6,88,66,Remanzo Azul
+2024-01-15,lunes,False,False,parcialmente nublado,29.0,28,189,Remanzo Azul
+2024-01-16,martes,False,False,lluvioso,23.2,62,79,Remanzo Azul
+2024-01-17,miércoles,False,False,soleado,29.6,0,276,Remanzo Azul
+2024-01-18,jueves,False,False,lluvioso,26.6,81,64,Remanzo Azul
+2024-01-19,viernes,False,False,soleado,30.1,4,274,Remanzo Azul
+2024-01-20,sábado,True,False,parcialmente nublado,29.7,16,374,Remanzo Azul
+2024-01-21,domingo,True,False,lluvioso,25.3,87,177,Remanzo Azul
+2024-01-22,lunes,False,False,lluvioso,26.5,61,112,Remanzo Azul
+2024-01-23,martes,False,False,parcialmente nublado,29.2,22,161,Remanzo Azul
+2024-01-24,miércoles,False,False,lluvioso,25.3,75,103,Remanzo Azul
+2024-01-25,jueves,False,False,soleado,30.1,1,222,Remanzo Azul
+2024-01-26,viernes,False,False,tormenta,26.3,85,44,Remanzo Azul
+2024-01-27,sábado,True,False,nublado,27.9,54,285,Remanzo Azul
+2024-01-28,domingo,True,False,soleado,31.2,9,433,Remanzo Azul
+2024-01-29,lunes,False,False,soleado,29.1,3,266,Remanzo Azul
+2024-01-30,martes,False,False,nublado,27.1,53,192,Remanzo Azul
+2024-01-31,miércoles,False,False,soleado,29.5,0,276,Remanzo Azul
+2024-02-01,jueves,False,False,soleado,31.6,8,218,Remanzo Azul
+2024-02-02,viernes,False,False,lluvioso,27.8,76,91,Remanzo Azul
+2024-02-03,sábado,True,False,parcialmente nublado,29.1,34,436,Remanzo Azul
+2024-02-04,domingo,True,False,soleado,31.4,4,395,Remanzo Azul
+2024-02-05,lunes,False,False,tormenta,24.5,96,51,Remanzo Azul
+2024-02-06,martes,False,False,tormenta,25.8,86,40,Remanzo Azul
+2024-02-07,miércoles,False,False,nublado,28.0,33,168,Remanzo Azul
+2024-02-08,jueves,False,False,lluvioso,28.1,82,98,Remanzo Azul
+2024-02-09,viernes,False,False,soleado,31.7,3,238,Remanzo Azul
+2024-02-10,sábado,True,False,nublado,30.3,33,250,Remanzo Azul
+2024-02-11,domingo,True,False,soleado,32.2,5,439,Remanzo Azul
+2024-02-12,lunes,False,False,lluvioso,26.7,65,87,Remanzo Azul
+2024-02-13,martes,False,False,tormenta,27.2,94,40,Remanzo Azul
+2024-02-14,miércoles,False,False,lluvioso,28.4,85,90,Remanzo Azul
+2024-02-15,jueves,False,False,soleado,30.8,5,249,Remanzo Azul
+2024-02-16,viernes,False,False,lluvioso,27.9,66,84,Remanzo Azul
+2024-02-17,sábado,True,False,lluvioso,28.0,86,182,Remanzo Azul
+2024-02-18,domingo,True,False,lluvioso,27.6,87,171,Remanzo Azul
+2024-02-19,lunes,False,False,lluvioso,27.5,79,99,Remanzo Azul
+2024-02-20,martes,False,False,nublado,30.6,36,168,Remanzo Azul
+2024-02-21,miércoles,False,False,nublado,29.3,37,189,Remanzo Azul
+2024-02-22,jueves,False,False,soleado,32.7,3,258,Remanzo Azul
+2024-02-23,viernes,False,False,nublado,29.1,47,155,Remanzo Azul
+2024-02-24,sábado,True,False,nublado,27.6,56,270,Remanzo Azul
+2024-02-25,domingo,True,False,parcialmente nublado,30.8,23,360,Remanzo Azul
+2024-02-26,lunes,False,False,parcialmente nublado,31.3,21,212,Remanzo Azul
+2024-02-27,martes,False,False,lluvioso,27.0,63,106,Remanzo Azul
+2024-02-28,miércoles,False,False,parcialmente nublado,30.7,21,204,Remanzo Azul
+2024-02-29,jueves,False,False,tormenta,26.0,87,42,Remanzo Azul
+2024-03-01,viernes,False,False,lluvioso,29.2,61,87,Remanzo Azul
+2024-03-02,sábado,True,False,parcialmente nublado,30.6,24,374,Remanzo Azul
+2024-03-03,domingo,True,False,lluvioso,27.9,68,144,Remanzo Azul
+2024-03-04,lunes,False,False,soleado,32.4,9,237,Remanzo Azul
+2024-03-05,martes,False,False,parcialmente nublado,30.8,14,225,Remanzo Azul
+2024-03-06,miércoles,False,False,parcialmente nublado,29.3,31,215,Remanzo Azul
+2024-03-07,jueves,False,False,tormenta,30.9,88,37,Remanzo Azul
+2024-03-08,viernes,False,False,lluvioso,25.5,88,111,Remanzo Azul
+2024-03-09,sábado,True,False,nublado,30.6,49,266,Remanzo Azul
+2024-03-10,domingo,True,False,nublado,28.8,40,298,Remanzo Azul
+2024-03-11,lunes,False,False,parcialmente nublado,31.4,24,195,Remanzo Azul
+2024-03-12,martes,False,False,lluvioso,29.5,77,94,Remanzo Azul
+2024-03-13,miércoles,False,False,soleado,30.8,6,213,Remanzo Azul
+2024-03-14,jueves,False,False,parcialmente nublado,31.2,12,198,Remanzo Azul
+2024-03-15,viernes,False,False,lluvioso,29.4,63,86,Remanzo Azul
+2024-03-16,sábado,True,False,nublado,28.7,42,274,Remanzo Azul
+2024-03-17,domingo,True,False,soleado,32.7,4,286,Remanzo Azul
+2024-03-18,lunes,False,False,soleado,31.9,2,237,Remanzo Azul
+2024-03-19,martes,False,False,parcialmente nublado,31.4,14,240,Remanzo Azul
+2024-03-20,miércoles,False,False,parcialmente nublado,31.9,23,183,Remanzo Azul
+2024-03-21,jueves,False,False,tormenta,25.3,92,42,Remanzo Azul
+2024-03-22,viernes,False,False,lluvioso,28.1,68,89,Remanzo Azul
+2024-03-23,sábado,True,False,tormenta,25.1,85,84,Remanzo Azul
+2024-03-24,domingo,True,False,nublado,26.7,31,281,Remanzo Azul
+2024-03-25,lunes,False,False,lluvioso,29.0,89,98,Remanzo Azul
+2024-03-26,martes,False,False,parcialmente nublado,29.8,15,220,Remanzo Azul
+2024-03-27,miércoles,False,False,lluvioso,29.3,62,110,Remanzo Azul
+2024-03-28,jueves,False,False,soleado,32.8,1,268,Remanzo Azul
+2024-03-29,viernes,False,False,soleado,32.6,1,279,Remanzo Azul
+2024-03-30,sábado,True,False,nublado,29.9,50,336,Remanzo Azul
+2024-03-31,domingo,True,False,lluvioso,27.7,75,174,Remanzo Azul
+2024-04-01,lunes,False,False,lluvioso,28.7,81,111,Remanzo Azul
+2024-04-02,martes,False,False,parcialmente nublado,30.3,12,195,Remanzo Azul
+2024-04-03,miércoles,False,False,lluvioso,28.1,86,91,Remanzo Azul
+2024-04-04,jueves,False,False,parcialmente nublado,32.0,31,185,Remanzo Azul
+2024-04-05,viernes,False,False,soleado,34.2,4,224,Remanzo Azul
+2024-04-06,sábado,True,False,lluvioso,29.7,78,191,Remanzo Azul
+2024-04-07,domingo,True,False,parcialmente nublado,30.4,26,341,Remanzo Azul
+2024-04-08,lunes,False,False,soleado,33.8,9,225,Remanzo Azul
+2024-04-09,martes,False,False,parcialmente nublado,30.7,34,190,Remanzo Azul
+2024-04-10,miércoles,False,False,soleado,32.2,6,245,Remanzo Azul
+2024-04-11,jueves,False,False,tormenta,26.3,86,44,Remanzo Azul
+2024-04-12,viernes,False,False,soleado,32.9,0,210,Remanzo Azul
+2024-04-13,sábado,True,False,soleado,33.1,0,427,Remanzo Azul
+2024-04-14,domingo,True,False,parcialmente nublado,28.7,26,412,Remanzo Azul
+2024-04-15,lunes,False,False,soleado,32.6,3,241,Remanzo Azul
+2024-04-16,martes,False,False,nublado,30.2,56,140,Remanzo Azul
+2024-04-17,miércoles,False,False,soleado,32.3,3,249,Remanzo Azul
+2024-04-18,jueves,False,False,parcialmente nublado,32.2,27,239,Remanzo Azul
+2024-04-19,viernes,False,False,nublado,28.2,40,126,Remanzo Azul
+2024-04-20,sábado,True,False,parcialmente nublado,31.3,13,338,Remanzo Azul
+2024-04-21,domingo,True,False,soleado,33.5,7,447,Remanzo Azul
+2024-04-22,lunes,False,False,parcialmente nublado,30.5,16,226,Remanzo Azul
+2024-04-23,martes,False,False,lluvioso,27.3,87,115,Remanzo Azul
+2024-04-24,miércoles,False,False,parcialmente nublado,32.6,24,188,Remanzo Azul
+2024-04-25,jueves,False,False,parcialmente nublado,30.8,31,240,Remanzo Azul
+2024-04-26,viernes,False,False,parcialmente nublado,29.6,34,243,Remanzo Azul
+2024-04-27,sábado,True,False,soleado,33.5,4,417,Remanzo Azul
+2024-04-28,domingo,True,False,lluvioso,29.3,87,163,Remanzo Azul
+2024-04-29,lunes,False,False,parcialmente nublado,27.6,29,220,Remanzo Azul
+2024-04-30,martes,False,False,soleado,30.2,9,203,Remanzo Azul
+2024-05-01,miércoles,False,True,soleado,32.9,2,415,Remanzo Azul
+2024-05-02,jueves,False,False,nublado,28.7,51,178,Remanzo Azul
+2024-05-03,viernes,False,False,parcialmente nublado,31.9,24,191,Remanzo Azul
+2024-05-04,sábado,True,False,soleado,31.6,5,500,Remanzo Azul
+2024-05-05,domingo,True,False,parcialmente nublado,30.7,19,367,Remanzo Azul
+2024-05-06,lunes,False,False,soleado,34.4,6,256,Remanzo Azul
+2024-05-07,martes,False,False,soleado,32.6,0,304,Remanzo Azul
+2024-05-08,miércoles,False,False,parcialmente nublado,29.0,28,223,Remanzo Azul
+2024-05-09,jueves,False,False,nublado,27.6,58,164,Remanzo Azul
+2024-05-10,viernes,False,False,soleado,30.1,4,262,Remanzo Azul
+2024-05-11,sábado,True,False,parcialmente nublado,29.4,20,350,Remanzo Azul
+2024-05-12,domingo,True,False,parcialmente nublado,29.4,25,367,Remanzo Azul
+2024-05-13,lunes,False,False,nublado,28.5,38,194,Remanzo Azul
+2024-05-14,martes,False,False,soleado,30.9,2,285,Remanzo Azul
+2024-05-15,miércoles,False,False,parcialmente nublado,29.6,17,202,Remanzo Azul
+2024-05-16,jueves,False,False,soleado,30.8,8,270,Remanzo Azul
+2024-05-17,viernes,False,False,parcialmente nublado,29.5,24,216,Remanzo Azul
+2024-05-18,sábado,True,False,soleado,30.1,7,408,Remanzo Azul
+2024-05-19,domingo,True,False,parcialmente nublado,29.3,26,335,Remanzo Azul
+2024-05-20,lunes,False,False,lluvioso,27.3,68,117,Remanzo Azul
+2024-05-21,martes,False,False,parcialmente nublado,26.8,29,215,Remanzo Azul
+2024-05-22,miércoles,False,False,soleado,29.9,8,287,Remanzo Azul
+2024-05-23,jueves,False,False,soleado,29.3,9,301,Remanzo Azul
+2024-05-24,viernes,False,False,nublado,28.2,37,138,Remanzo Azul
+2024-05-25,sábado,True,False,soleado,32.0,9,427,Remanzo Azul
+2024-05-26,domingo,True,False,parcialmente nublado,29.0,27,306,Remanzo Azul
+2024-05-27,lunes,False,False,nublado,28.3,57,161,Remanzo Azul
+2024-05-28,martes,False,False,soleado,31.9,9,257,Remanzo Azul
+2024-05-29,miércoles,False,False,nublado,27.3,49,173,Remanzo Azul
+2024-05-30,jueves,False,False,parcialmente nublado,29.5,23,168,Remanzo Azul
+2024-05-31,viernes,False,False,parcialmente nublado,29.1,17,171,Remanzo Azul
+2024-06-01,sábado,True,False,nublado,28.5,56,225,Remanzo Azul
+2024-06-02,domingo,True,False,soleado,31.3,9,443,Remanzo Azul
+2024-06-03,lunes,False,False,parcialmente nublado,27.6,29,178,Remanzo Azul
+2024-06-04,martes,False,False,nublado,25.6,51,174,Remanzo Azul
+2024-06-05,miércoles,False,False,nublado,29.4,40,174,Remanzo Azul
+2024-06-06,jueves,False,False,lluvioso,24.1,88,81,Remanzo Azul
+2024-06-07,viernes,False,False,nublado,29.8,45,152,Remanzo Azul
+2024-06-08,sábado,True,False,lluvioso,25.9,80,180,Remanzo Azul
+2024-06-09,domingo,True,False,parcialmente nublado,28.4,34,399,Remanzo Azul
+2024-06-10,lunes,False,False,nublado,28.7,40,155,Remanzo Azul
+2024-06-11,martes,False,False,parcialmente nublado,29.8,31,234,Remanzo Azul
+2024-06-12,miércoles,False,False,parcialmente nublado,28.0,21,239,Remanzo Azul
+2024-06-13,jueves,False,False,parcialmente nublado,28.0,27,216,Remanzo Azul
+2024-06-14,viernes,False,False,soleado,27.4,3,183,Remanzo Azul
+2024-06-15,sábado,True,False,lluvioso,26.0,63,188,Remanzo Azul
+2024-06-16,domingo,True,False,parcialmente nublado,26.2,29,399,Remanzo Azul
+2024-06-17,lunes,False,False,soleado,29.9,6,265,Remanzo Azul
+2024-06-18,martes,False,False,soleado,30.4,7,220,Remanzo Azul
+2024-06-19,miércoles,False,False,soleado,30.6,8,290,Remanzo Azul
+2024-06-20,jueves,False,False,soleado,28.6,0,187,Remanzo Azul
+2024-06-21,viernes,False,False,soleado,28.7,9,238,Remanzo Azul
+2024-06-22,sábado,True,False,soleado,27.4,7,390,Remanzo Azul
+2024-06-23,domingo,True,False,soleado,28.9,0,384,Remanzo Azul
+2024-06-24,lunes,False,False,soleado,28.9,5,253,Remanzo Azul
+2024-06-25,martes,False,False,parcialmente nublado,28.5,15,163,Remanzo Azul
+2024-06-26,miércoles,False,False,soleado,29.0,9,273,Remanzo Azul
+2024-06-27,jueves,False,False,soleado,31.3,1,234,Remanzo Azul
+2024-06-28,viernes,False,False,nublado,27.1,46,125,Remanzo Azul
+2024-06-29,sábado,True,True,soleado,29.0,8,790,Remanzo Azul
+2024-06-30,domingo,True,False,parcialmente nublado,27.8,16,341,Remanzo Azul
+2024-07-01,lunes,False,False,parcialmente nublado,27.5,23,240,Remanzo Azul
+2024-07-02,martes,False,False,parcialmente nublado,29.2,15,178,Remanzo Azul
+2024-07-03,miércoles,False,False,soleado,28.1,1,227,Remanzo Azul
+2024-07-04,jueves,False,False,lluvioso,23.5,86,102,Remanzo Azul
+2024-07-05,viernes,False,False,parcialmente nublado,27.7,34,219,Remanzo Azul
+2024-07-06,sábado,True,False,nublado,25.2,46,246,Remanzo Azul
+2024-07-07,domingo,True,False,nublado,26.0,55,236,Remanzo Azul
+2024-07-08,lunes,False,False,lluvioso,24.8,72,106,Remanzo Azul
+2024-07-09,martes,False,False,soleado,29.5,6,272,Remanzo Azul
+2024-07-10,miércoles,False,False,parcialmente nublado,28.4,30,198,Remanzo Azul
+2024-07-11,jueves,False,False,parcialmente nublado,27.9,21,212,Remanzo Azul
+2024-07-12,viernes,False,False,soleado,27.5,0,263,Remanzo Azul
+2024-07-13,sábado,True,False,soleado,28.6,7,437,Remanzo Azul
+2024-07-14,domingo,True,False,parcialmente nublado,25.4,30,377,Remanzo Azul
+2024-07-15,lunes,False,False,lluvioso,22.5,68,86,Remanzo Azul
+2024-07-16,martes,False,False,soleado,28.0,2,241,Remanzo Azul
+2024-07-17,miércoles,False,False,soleado,30.1,5,272,Remanzo Azul
+2024-07-18,jueves,False,False,nublado,24.5,49,181,Remanzo Azul
+2024-07-19,viernes,False,False,parcialmente nublado,25.3,33,175,Remanzo Azul
+2024-07-20,sábado,True,False,soleado,28.0,7,424,Remanzo Azul
+2024-07-21,domingo,True,False,soleado,27.4,7,381,Remanzo Azul
+2024-07-22,lunes,False,False,soleado,28.2,7,264,Remanzo Azul
+2024-07-23,martes,False,False,nublado,24.2,47,196,Remanzo Azul
+2024-07-24,miércoles,False,False,lluvioso,25.2,61,86,Remanzo Azul
+2024-07-25,jueves,False,False,lluvioso,25.0,89,102,Remanzo Azul
+2024-07-26,viernes,False,False,parcialmente nublado,26.1,23,161,Remanzo Azul
+2024-07-27,sábado,True,False,parcialmente nublado,24.0,26,410,Remanzo Azul
+2024-07-28,domingo,True,True,parcialmente nublado,26.8,31,829,Remanzo Azul
+2024-07-29,lunes,False,True,soleado,28.4,7,565,Remanzo Azul
+2024-07-30,martes,False,False,soleado,27.3,5,224,Remanzo Azul
+2024-07-31,miércoles,False,False,parcialmente nublado,26.1,22,202,Remanzo Azul
+2024-08-01,jueves,False,False,parcialmente nublado,25.4,16,169,Remanzo Azul
+2024-08-02,viernes,False,False,soleado,26.9,7,298,Remanzo Azul
+2024-08-03,sábado,True,False,soleado,28.1,0,428,Remanzo Azul
+2024-08-04,domingo,True,False,nublado,23.4,45,282,Remanzo Azul
+2024-08-05,lunes,False,False,nublado,24.1,46,137,Remanzo Azul
+2024-08-06,martes,False,False,lluvioso,23.6,85,122,Remanzo Azul
+2024-08-07,miércoles,False,False,soleado,28.6,3,288,Remanzo Azul
+2024-08-08,jueves,False,False,soleado,26.0,2,237,Remanzo Azul
+2024-08-09,viernes,False,False,soleado,28.0,9,183,Remanzo Azul
+2024-08-10,sábado,True,False,parcialmente nublado,23.9,12,322,Remanzo Azul
+2024-08-11,domingo,True,False,parcialmente nublado,24.9,17,361,Remanzo Azul
+2024-08-12,lunes,False,False,lluvioso,22.5,67,93,Remanzo Azul
+2024-08-13,martes,False,False,lluvioso,21.9,83,86,Remanzo Azul
+2024-08-14,miércoles,False,False,lluvioso,24.6,77,116,Remanzo Azul
+2024-08-15,jueves,False,False,parcialmente nublado,27.3,14,195,Remanzo Azul
+2024-08-16,viernes,False,False,nublado,22.0,39,140,Remanzo Azul
+2024-08-17,sábado,True,False,parcialmente nublado,23.0,15,358,Remanzo Azul
+2024-08-18,domingo,True,False,parcialmente nublado,25.9,13,387,Remanzo Azul
+2024-08-19,lunes,False,False,soleado,28.0,5,260,Remanzo Azul
+2024-08-20,martes,False,False,soleado,28.7,0,274,Remanzo Azul
+2024-08-21,miércoles,False,False,soleado,26.5,6,164,Remanzo Azul
+2024-08-22,jueves,False,False,parcialmente nublado,26.8,34,200,Remanzo Azul
+2024-08-23,viernes,False,False,soleado,25.3,2,253,Remanzo Azul
+2024-08-24,sábado,True,False,lluvioso,21.3,69,150,Remanzo Azul
+2024-08-25,domingo,True,False,soleado,26.7,1,387,Remanzo Azul
+2024-08-26,lunes,False,False,lluvioso,21.7,72,111,Remanzo Azul
+2024-08-27,martes,False,False,lluvioso,20.4,82,103,Remanzo Azul
+2024-08-28,miércoles,False,False,soleado,26.2,0,219,Remanzo Azul
+2024-08-29,jueves,False,False,soleado,26.6,4,228,Remanzo Azul
+2024-08-30,viernes,False,True,parcialmente nublado,25.3,24,506,Remanzo Azul
+2024-08-31,sábado,True,False,parcialmente nublado,24.1,32,325,Remanzo Azul
+2024-09-01,domingo,True,False,nublado,22.6,51,218,Remanzo Azul
+2024-09-02,lunes,False,False,parcialmente nublado,23.7,13,222,Remanzo Azul
+2024-09-03,martes,False,False,soleado,27.3,8,253,Remanzo Azul
+2024-09-04,miércoles,False,False,parcialmente nublado,25.4,31,190,Remanzo Azul
+2024-09-05,jueves,False,False,tormenta,21.2,98,42,Remanzo Azul
+2024-09-06,viernes,False,False,parcialmente nublado,24.8,30,247,Remanzo Azul
+2024-09-07,sábado,True,False,parcialmente nublado,26.6,30,399,Remanzo Azul
+2024-09-08,domingo,True,False,soleado,26.5,1,371,Remanzo Azul
+2024-09-09,lunes,False,False,tormenta,20.0,92,41,Remanzo Azul
+2024-09-10,martes,False,False,parcialmente nublado,24.5,20,200,Remanzo Azul
+2024-09-11,miércoles,False,False,soleado,27.2,1,292,Remanzo Azul
+2024-09-12,jueves,False,False,soleado,24.9,9,233,Remanzo Azul
+2024-09-13,viernes,False,False,nublado,22.1,42,177,Remanzo Azul
+2024-09-14,sábado,True,False,lluvioso,21.8,68,126,Remanzo Azul
+2024-09-15,domingo,True,False,soleado,27.5,3,437,Remanzo Azul
+2024-09-16,lunes,False,False,nublado,23.5,43,197,Remanzo Azul
+2024-09-17,martes,False,False,lluvioso,20.7,69,103,Remanzo Azul
+2024-09-18,miércoles,False,False,soleado,24.1,9,274,Remanzo Azul
+2024-09-19,jueves,False,False,nublado,23.8,54,126,Remanzo Azul
+2024-09-20,viernes,False,False,nublado,23.4,50,167,Remanzo Azul
+2024-09-21,sábado,True,False,parcialmente nublado,25.9,23,299,Remanzo Azul
+2024-09-22,domingo,True,False,lluvioso,22.3,86,181,Remanzo Azul
+2024-09-23,lunes,False,False,soleado,24.5,5,221,Remanzo Azul
+2024-09-24,martes,False,False,lluvioso,22.2,72,110,Remanzo Azul
+2024-09-25,miércoles,False,False,parcialmente nublado,24.1,21,202,Remanzo Azul
+2024-09-26,jueves,False,False,tormenta,22.7,98,32,Remanzo Azul
+2024-09-27,viernes,False,False,parcialmente nublado,24.2,26,157,Remanzo Azul
+2024-09-28,sábado,True,False,nublado,22.6,34,262,Remanzo Azul
+2024-09-29,domingo,True,False,nublado,24.7,51,302,Remanzo Azul
+2024-09-30,lunes,False,False,soleado,26.8,8,275,Remanzo Azul
+2024-10-01,martes,False,False,parcialmente nublado,24.1,17,217,Remanzo Azul
+2024-10-02,miércoles,False,False,parcialmente nublado,25.8,33,265,Remanzo Azul
+2024-10-03,jueves,False,False,tormenta,20.1,90,45,Remanzo Azul
+2024-10-04,viernes,False,False,parcialmente nublado,23.7,15,169,Remanzo Azul
+2024-10-05,sábado,True,False,lluvioso,22.4,66,194,Remanzo Azul
+2024-10-06,domingo,True,False,lluvioso,21.2,73,192,Remanzo Azul
+2024-10-07,lunes,False,False,soleado,24.8,5,279,Remanzo Azul
+2024-10-08,martes,False,True,parcialmente nublado,25.3,22,468,Remanzo Azul
+2024-10-09,miércoles,False,False,parcialmente nublado,25.8,10,194,Remanzo Azul
+2024-10-10,jueves,False,False,soleado,24.9,3,243,Remanzo Azul
+2024-10-11,viernes,False,False,tormenta,20.1,94,57,Remanzo Azul
+2024-10-12,sábado,True,False,nublado,23.2,54,264,Remanzo Azul
+2024-10-13,domingo,True,False,soleado,25.6,4,449,Remanzo Azul
+2024-10-14,lunes,False,False,soleado,26.2,1,223,Remanzo Azul
+2024-10-15,martes,False,False,soleado,26.3,8,284,Remanzo Azul
+2024-10-16,miércoles,False,False,soleado,25.9,3,209,Remanzo Azul
+2024-10-17,jueves,False,False,nublado,25.1,31,168,Remanzo Azul
+2024-10-18,viernes,False,False,lluvioso,21.3,85,110,Remanzo Azul
+2024-10-19,sábado,True,False,soleado,28.0,7,335,Remanzo Azul
+2024-10-20,domingo,True,False,parcialmente nublado,24.9,19,372,Remanzo Azul
+2024-10-21,lunes,False,False,parcialmente nublado,25.7,10,198,Remanzo Azul
+2024-10-22,martes,False,False,parcialmente nublado,23.2,27,245,Remanzo Azul
+2024-10-23,miércoles,False,False,parcialmente nublado,25.2,20,213,Remanzo Azul
+2024-10-24,jueves,False,False,soleado,25.3,1,243,Remanzo Azul
+2024-10-25,viernes,False,False,parcialmente nublado,24.6,32,210,Remanzo Azul
+2024-10-26,sábado,True,False,soleado,26.5,9,383,Remanzo Azul
+2024-10-27,domingo,True,False,nublado,23.7,39,249,Remanzo Azul
+2024-10-28,lunes,False,False,parcialmente nublado,24.7,12,193,Remanzo Azul
+2024-10-29,martes,False,False,soleado,26.1,2,243,Remanzo Azul
+2024-10-30,miércoles,False,False,tormenta,20.6,91,41,Remanzo Azul
+2024-10-31,jueves,False,False,soleado,26.6,4,204,Remanzo Azul
+2024-11-01,viernes,False,True,parcialmente nublado,22.5,21,365,Remanzo Azul
+2024-11-02,sábado,True,False,soleado,24.5,8,419,Remanzo Azul
+2024-11-03,domingo,True,False,nublado,23.7,53,259,Remanzo Azul
+2024-11-04,lunes,False,False,parcialmente nublado,26.2,23,252,Remanzo Azul
+2024-11-05,martes,False,False,tormenta,22.2,93,45,Remanzo Azul
+2024-11-06,miércoles,False,False,soleado,25.1,9,258,Remanzo Azul
+2024-11-07,jueves,False,False,lluvioso,22.4,78,95,Remanzo Azul
+2024-11-08,viernes,False,False,soleado,26.8,7,244,Remanzo Azul
+2024-11-09,sábado,True,False,tormenta,22.3,96,72,Remanzo Azul
+2024-11-10,domingo,True,False,nublado,24.7,34,200,Remanzo Azul
+2024-11-11,lunes,False,False,soleado,28.3,6,178,Remanzo Azul
+2024-11-12,martes,False,False,nublado,23.1,51,156,Remanzo Azul
+2024-11-13,miércoles,False,False,lluvioso,24.5,77,85,Remanzo Azul
+2024-11-14,jueves,False,False,soleado,25.5,1,260,Remanzo Azul
+2024-11-15,viernes,False,False,soleado,26.2,5,242,Remanzo Azul
+2024-11-16,sábado,True,False,nublado,25.3,49,324,Remanzo Azul
+2024-11-17,domingo,True,False,parcialmente nublado,25.9,27,458,Remanzo Azul
+2024-11-18,lunes,False,False,soleado,27.8,6,247,Remanzo Azul
+2024-11-19,martes,False,False,soleado,26.0,7,283,Remanzo Azul
+2024-11-20,miércoles,False,False,soleado,28.2,1,248,Remanzo Azul
+2024-11-21,jueves,False,False,nublado,24.8,31,178,Remanzo Azul
+2024-11-22,viernes,False,False,nublado,23.3,55,123,Remanzo Azul
+2024-11-23,sábado,True,False,soleado,25.4,7,418,Remanzo Azul
+2024-11-24,domingo,True,False,soleado,28.9,8,472,Remanzo Azul
+2024-11-25,lunes,False,False,soleado,27.2,3,272,Remanzo Azul
+2024-11-26,martes,False,False,lluvioso,22.9,68,95,Remanzo Azul
+2024-11-27,miércoles,False,False,soleado,26.8,3,232,Remanzo Azul
+2024-11-28,jueves,False,False,soleado,28.4,1,266,Remanzo Azul
+2024-11-29,viernes,False,False,parcialmente nublado,24.1,32,172,Remanzo Azul
+2024-11-30,sábado,True,False,parcialmente nublado,26.5,16,317,Remanzo Azul
+2024-12-01,domingo,True,False,nublado,24.2,34,217,Remanzo Azul
+2024-12-02,lunes,False,False,parcialmente nublado,25.1,18,191,Remanzo Azul
+2024-12-03,martes,False,False,parcialmente nublado,25.5,15,217,Remanzo Azul
+2024-12-04,miércoles,False,False,parcialmente nublado,26.2,28,189,Remanzo Azul
+2024-12-05,jueves,False,False,nublado,28.8,31,144,Remanzo Azul
+2024-12-06,viernes,False,False,tormenta,22.3,98,44,Remanzo Azul
+2024-12-07,sábado,True,False,parcialmente nublado,26.8,25,365,Remanzo Azul
+2024-12-08,domingo,True,True,soleado,29.0,6,870,Remanzo Azul
+2024-12-09,lunes,False,False,lluvioso,22.6,67,109,Remanzo Azul
+2024-12-10,martes,False,False,lluvioso,25.4,70,98,Remanzo Azul
+2024-12-11,miércoles,False,False,nublado,26.3,32,145,Remanzo Azul
+2024-12-12,jueves,False,False,tormenta,22.2,86,32,Remanzo Azul
+2024-12-13,viernes,False,False,parcialmente nublado,26.7,32,212,Remanzo Azul
+2024-12-14,sábado,True,False,nublado,25.8,42,287,Remanzo Azul
+2024-12-15,domingo,True,False,parcialmente nublado,25.1,27,299,Remanzo Azul
+2024-12-16,lunes,False,False,soleado,28.0,7,214,Remanzo Azul
+2024-12-17,martes,False,False,lluvioso,22.5,62,120,Remanzo Azul
+2024-12-18,miércoles,False,False,lluvioso,23.2,82,121,Remanzo Azul
+2024-12-19,jueves,False,False,tormenta,24.9,89,49,Remanzo Azul
+2024-12-20,viernes,False,False,tormenta,22.9,93,44,Remanzo Azul
+2024-12-21,sábado,True,False,soleado,29.4,5,556,Remanzo Azul
+2024-12-22,domingo,True,False,soleado,28.8,0,399,Remanzo Azul
+2024-12-23,lunes,False,False,nublado,24.7,38,133,Remanzo Azul
+2024-12-24,martes,False,False,tormenta,23.4,85,43,Remanzo Azul
+2024-12-25,miércoles,False,True,parcialmente nublado,26.6,20,539,Remanzo Azul
+2024-12-26,jueves,False,False,lluvioso,25.6,63,112,Remanzo Azul
+2024-12-27,viernes,False,False,lluvioso,25.6,60,77,Remanzo Azul
+2024-12-28,sábado,True,False,tormenta,22.7,90,88,Remanzo Azul
+2024-12-29,domingo,True,False,parcialmente nublado,26.2,24,319,Remanzo Azul
+2024-12-30,lunes,False,False,nublado,25.7,49,130,Remanzo Azul
+2024-12-31,martes,False,False,lluvioso,26.5,76,101,Remanzo Azul
+2025-01-01,miércoles,False,True,parcialmente nublado,28.1,12,445,Remanzo Azul
+2025-01-02,jueves,False,False,parcialmente nublado,29.7,17,203,Remanzo Azul
+2025-01-03,viernes,False,False,lluvioso,24.4,63,88,Remanzo Azul
+2025-01-04,sábado,True,False,nublado,27.3,58,247,Remanzo Azul
+2025-01-05,domingo,True,False,lluvioso,24.0,80,204,Remanzo Azul
+2025-01-06,lunes,False,False,soleado,27.8,6,191,Remanzo Azul
+2025-01-07,martes,False,False,parcialmente nublado,28.8,14,218,Remanzo Azul
+2025-01-08,miércoles,False,False,lluvioso,28.3,62,101,Remanzo Azul
+2025-01-09,jueves,False,False,nublado,28.8,55,114,Remanzo Azul
+2025-01-10,viernes,False,False,soleado,28.0,5,211,Remanzo Azul
+2025-01-11,sábado,True,False,nublado,26.5,39,314,Remanzo Azul
+2025-01-12,domingo,True,False,lluvioso,26.5,86,170,Remanzo Azul
+2025-01-13,lunes,False,False,soleado,31.4,1,239,Remanzo Azul
+2025-01-14,martes,False,False,parcialmente nublado,26.9,34,235,Remanzo Azul
+2025-01-15,miércoles,False,False,soleado,30.0,7,202,Remanzo Azul
+2025-01-16,jueves,False,False,lluvioso,24.1,76,92,Remanzo Azul
+2025-01-17,viernes,False,False,soleado,30.2,6,291,Remanzo Azul
+2025-01-18,sábado,True,False,soleado,28.6,0,340,Remanzo Azul
+2025-01-19,domingo,True,False,nublado,26.7,48,279,Remanzo Azul
+2025-01-20,lunes,False,False,parcialmente nublado,27.2,27,229,Remanzo Azul
+2025-01-21,martes,False,False,tormenta,22.9,85,48,Remanzo Azul
+2025-01-22,miércoles,False,False,lluvioso,27.5,73,92,Remanzo Azul
+2025-01-23,jueves,False,False,nublado,27.2,45,161,Remanzo Azul
+2025-01-24,viernes,False,False,lluvioso,27.8,70,82,Remanzo Azul
+2025-01-25,sábado,True,False,soleado,31.5,3,371,Remanzo Azul
+2025-01-26,domingo,True,False,parcialmente nublado,30.3,21,371,Remanzo Azul
+2025-01-27,lunes,False,False,lluvioso,25.9,75,80,Remanzo Azul
+2025-01-28,martes,False,False,soleado,30.4,6,240,Remanzo Azul
+2025-01-29,miércoles,False,False,lluvioso,28.7,78,98,Remanzo Azul
+2025-01-30,jueves,False,False,tormenta,24.7,88,65,Remanzo Azul
+2025-01-31,viernes,False,False,lluvioso,24.6,65,117,Remanzo Azul
+2025-02-01,sábado,True,False,lluvioso,26.7,62,165,Remanzo Azul
+2025-02-02,domingo,True,False,lluvioso,26.2,85,173,Remanzo Azul
+2025-02-03,lunes,False,False,lluvioso,27.3,62,109,Remanzo Azul
+2025-02-04,martes,False,False,tormenta,26.1,94,46,Remanzo Azul
+2025-02-05,miércoles,False,False,lluvioso,26.3,66,91,Remanzo Azul
+2025-02-06,jueves,False,False,soleado,32.0,8,273,Remanzo Azul
+2025-02-07,viernes,False,False,tormenta,26.4,99,53,Remanzo Azul
+2025-02-08,sábado,True,False,soleado,29.0,4,380,Remanzo Azul
+2025-02-09,domingo,True,False,parcialmente nublado,28.7,27,408,Remanzo Azul
+2025-02-10,lunes,False,False,soleado,29.1,9,220,Remanzo Azul
+2025-02-11,martes,False,False,parcialmente nublado,30.2,15,201,Remanzo Azul
+2025-02-12,miércoles,False,False,soleado,32.4,4,208,Remanzo Azul
+2025-02-13,jueves,False,False,soleado,27.8,7,225,Remanzo Azul
+2025-02-14,viernes,False,False,soleado,33.0,9,244,Remanzo Azul
+2025-02-15,sábado,True,False,parcialmente nublado,27.3,17,300,Remanzo Azul
+2025-02-16,domingo,True,False,parcialmente nublado,29.0,28,348,Remanzo Azul
+2025-02-17,lunes,False,False,lluvioso,28.7,79,81,Remanzo Azul
+2025-02-18,martes,False,False,tormenta,28.2,89,49,Remanzo Azul
+2025-02-19,miércoles,False,False,parcialmente nublado,29.0,21,187,Remanzo Azul
+2025-02-20,jueves,False,False,soleado,31.5,9,206,Remanzo Azul
+2025-02-21,viernes,False,False,soleado,30.2,1,244,Remanzo Azul
+2025-02-22,sábado,True,False,parcialmente nublado,29.0,16,360,Remanzo Azul
+2025-02-23,domingo,True,False,parcialmente nublado,29.3,20,369,Remanzo Azul
+2025-02-24,lunes,False,False,parcialmente nublado,31.0,16,195,Remanzo Azul
+2025-02-25,martes,False,False,parcialmente nublado,30.7,13,189,Remanzo Azul
+2025-02-26,miércoles,False,False,tormenta,26.5,91,46,Remanzo Azul
+2025-02-27,jueves,False,False,tormenta,27.0,94,47,Remanzo Azul
+2025-02-28,viernes,False,False,lluvioso,28.6,64,100,Remanzo Azul
+2025-03-01,sábado,True,False,tormenta,25.3,85,90,Remanzo Azul
+2025-03-02,domingo,True,False,soleado,32.4,2,423,Remanzo Azul
+2025-03-03,lunes,False,False,lluvioso,27.4,81,92,Remanzo Azul
+2025-03-04,martes,False,False,tormenta,26.5,89,43,Remanzo Azul
+2025-03-05,miércoles,False,False,parcialmente nublado,29.9,34,213,Remanzo Azul
+2025-03-06,jueves,False,False,nublado,27.9,57,161,Remanzo Azul
+2025-03-07,viernes,False,False,soleado,30.7,9,201,Remanzo Azul
+2025-03-08,sábado,True,False,lluvioso,29.9,65,184,Remanzo Azul
+2025-03-09,domingo,True,False,parcialmente nublado,29.4,32,422,Remanzo Azul
+2025-03-10,lunes,False,False,soleado,31.8,7,285,Remanzo Azul
+2025-03-11,martes,False,False,lluvioso,25.2,74,93,Remanzo Azul
+2025-03-12,miércoles,False,False,parcialmente nublado,27.5,12,194,Remanzo Azul
+2025-03-13,jueves,False,False,lluvioso,28.6,80,104,Remanzo Azul
+2025-03-14,viernes,False,False,soleado,31.9,0,257,Remanzo Azul
+2025-03-15,sábado,True,False,parcialmente nublado,30.0,29,341,Remanzo Azul
+2025-03-16,domingo,True,False,soleado,33.3,6,391,Remanzo Azul
+2025-03-17,lunes,False,False,soleado,29.9,2,233,Remanzo Azul
+2025-03-18,martes,False,False,tormenta,28.4,94,49,Remanzo Azul
+2025-03-19,miércoles,False,False,soleado,34.7,5,222,Remanzo Azul
+2025-03-20,jueves,False,False,soleado,32.4,0,251,Remanzo Azul
+2025-03-21,viernes,False,False,nublado,29.5,53,164,Remanzo Azul
+2025-03-22,sábado,True,False,soleado,33.1,4,419,Remanzo Azul
+2025-03-23,domingo,True,False,parcialmente nublado,29.7,22,286,Remanzo Azul
+2025-03-24,lunes,False,False,parcialmente nublado,32.5,22,197,Remanzo Azul
+2025-03-25,martes,False,False,soleado,31.9,6,275,Remanzo Azul
+2025-03-26,miércoles,False,False,parcialmente nublado,31.1,28,238,Remanzo Azul
+2025-03-27,jueves,False,False,soleado,32.0,0,259,Remanzo Azul
+2025-03-28,viernes,False,False,lluvioso,28.5,66,95,Remanzo Azul
+2025-03-29,sábado,True,False,soleado,31.9,7,406,Remanzo Azul
+2025-03-30,domingo,True,False,tormenta,25.1,85,89,Remanzo Azul
+2025-03-31,lunes,False,False,lluvioso,27.9,78,97,Remanzo Azul
+2025-04-01,martes,False,False,lluvioso,27.1,86,90,Remanzo Azul
+2025-04-02,miércoles,False,False,soleado,32.1,1,204,Remanzo Azul
+2025-04-03,jueves,False,False,lluvioso,30.0,87,106,Remanzo Azul
+2025-04-04,viernes,False,False,soleado,34.0,7,261,Remanzo Azul
+2025-04-05,sábado,True,False,parcialmente nublado,31.6,21,373,Remanzo Azul
+2025-04-06,domingo,True,False,nublado,30.6,33,246,Remanzo Azul
+2025-04-07,lunes,False,False,soleado,32.1,9,248,Remanzo Azul
+2025-04-08,martes,False,False,parcialmente nublado,33.0,26,169,Remanzo Azul
+2025-04-09,miércoles,False,False,soleado,31.5,6,273,Remanzo Azul
+2025-04-10,jueves,False,False,parcialmente nublado,29.5,27,224,Remanzo Azul
+2025-04-11,viernes,False,False,lluvioso,27.1,83,103,Remanzo Azul
+2025-04-12,sábado,True,False,soleado,30.8,5,374,Remanzo Azul
+2025-04-13,domingo,True,False,soleado,30.4,3,334,Remanzo Azul
+2025-04-14,lunes,False,False,parcialmente nublado,31.7,33,183,Remanzo Azul
+2025-04-15,martes,False,False,soleado,30.6,0,258,Remanzo Azul
+2025-04-16,miércoles,False,False,soleado,29.8,9,216,Remanzo Azul
+2025-04-17,jueves,False,False,lluvioso,29.3,67,129,Remanzo Azul
+2025-04-18,viernes,False,False,parcialmente nublado,30.1,20,163,Remanzo Azul
+2025-04-19,sábado,True,False,parcialmente nublado,30.8,20,448,Remanzo Azul
+2025-04-20,domingo,True,False,soleado,31.9,8,346,Remanzo Azul
+2025-04-21,lunes,False,False,parcialmente nublado,29.8,32,161,Remanzo Azul
+2025-04-22,martes,False,False,soleado,32.1,0,266,Remanzo Azul
+2025-04-23,miércoles,False,False,soleado,31.1,1,265,Remanzo Azul
+2025-04-24,jueves,False,False,parcialmente nublado,30.7,25,162,Remanzo Azul
+2025-04-25,viernes,False,False,soleado,31.8,8,274,Remanzo Azul
+2025-04-26,sábado,True,False,parcialmente nublado,30.7,22,327,Remanzo Azul
+2025-04-27,domingo,True,False,soleado,30.9,6,342,Remanzo Azul
+2025-04-28,lunes,False,False,parcialmente nublado,31.0,28,210,Remanzo Azul
+2025-04-29,martes,False,False,soleado,32.0,0,238,Remanzo Azul
+2025-04-30,miércoles,False,False,soleado,29.6,1,212,Remanzo Azul
+2025-05-01,jueves,False,True,lluvioso,31.2,70,257,Remanzo Azul
+2025-05-02,viernes,False,False,parcialmente nublado,29.9,14,204,Remanzo Azul
+2025-05-03,sábado,True,False,parcialmente nublado,30.3,31,378,Remanzo Azul
+2025-05-04,domingo,True,False,tormenta,26.1,90,56,Remanzo Azul
+2025-05-05,lunes,False,False,soleado,31.3,0,229,Remanzo Azul
+2025-05-06,martes,False,False,nublado,30.3,43,162,Remanzo Azul
+2025-05-07,miércoles,False,False,parcialmente nublado,32.3,30,192,Remanzo Azul
+2025-05-08,jueves,False,False,lluvioso,27.2,74,113,Remanzo Azul
+2025-05-09,viernes,False,False,nublado,27.4,51,169,Remanzo Azul
+2025-05-10,sábado,True,False,lluvioso,26.2,73,163,Remanzo Azul
+2025-05-11,domingo,True,False,soleado,32.6,7,328,Remanzo Azul
+2025-05-12,lunes,False,False,soleado,31.9,4,266,Remanzo Azul
+2025-05-13,martes,False,False,soleado,29.9,8,275,Remanzo Azul
+2025-05-14,miércoles,False,False,parcialmente nublado,30.1,30,239,Remanzo Azul
+2025-05-15,jueves,False,False,nublado,29.4,53,182,Remanzo Azul
+2025-05-16,viernes,False,False,nublado,28.9,59,160,Remanzo Azul
+2025-05-17,sábado,True,False,nublado,27.8,30,298,Remanzo Azul
+2025-05-18,domingo,True,False,lluvioso,27.9,75,153,Remanzo Azul
+2025-05-19,lunes,False,False,nublado,30.3,40,172,Remanzo Azul
+2025-05-20,martes,False,False,soleado,30.8,6,280,Remanzo Azul
+2025-05-21,miércoles,False,False,lluvioso,27.6,80,84,Remanzo Azul
+2025-05-22,jueves,False,False,soleado,27.7,2,296,Remanzo Azul
+2025-05-23,viernes,False,False,soleado,30.7,0,216,Remanzo Azul
+2025-05-24,sábado,True,False,nublado,27.8,51,311,Remanzo Azul
+2025-05-25,domingo,True,False,soleado,31.3,2,276,Remanzo Azul
+2025-05-26,lunes,False,False,soleado,30.7,0,237,Remanzo Azul
+2025-05-27,martes,False,False,soleado,30.5,2,247,Remanzo Azul
+2025-05-28,miércoles,False,False,nublado,26.1,46,124,Remanzo Azul
+2025-05-29,jueves,False,False,parcialmente nublado,29.9,13,174,Remanzo Azul
+2025-05-30,viernes,False,False,lluvioso,28.3,88,109,Remanzo Azul
+2025-05-31,sábado,True,False,parcialmente nublado,27.8,25,367,Remanzo Azul
+2025-06-01,domingo,True,False,soleado,29.4,9,424,Remanzo Azul
+2025-06-02,lunes,False,False,soleado,32.5,3,219,Remanzo Azul
+2025-06-03,martes,False,False,nublado,27.2,58,156,Remanzo Azul
+2025-06-04,miércoles,False,False,soleado,30.4,8,246,Remanzo Azul
+2025-06-05,jueves,False,False,soleado,30.8,1,216,Remanzo Azul
+2025-06-06,viernes,False,False,soleado,31.5,8,270,Remanzo Azul
+2025-06-07,sábado,True,False,soleado,28.2,2,448,Remanzo Azul
+2025-06-08,domingo,True,False,soleado,31.2,0,401,Remanzo Azul
+2025-06-09,lunes,False,False,lluvioso,26.6,81,87,Remanzo Azul
+2025-06-10,martes,False,False,soleado,30.9,7,219,Remanzo Azul
+2025-06-11,miércoles,False,False,soleado,31.2,7,279,Remanzo Azul
+2025-06-12,jueves,False,False,parcialmente nublado,29.7,19,142,Remanzo Azul
+2025-06-13,viernes,False,False,parcialmente nublado,30.4,16,197,Remanzo Azul
+2025-06-14,sábado,True,False,soleado,31.2,9,434,Remanzo Azul
+2025-06-15,domingo,True,False,soleado,29.1,1,416,Remanzo Azul
+2025-06-16,lunes,False,False,soleado,29.8,0,248,Remanzo Azul
+2025-06-17,martes,False,False,nublado,29.1,52,175,Remanzo Azul
+2025-06-18,miércoles,False,False,soleado,29.5,9,280,Remanzo Azul
+2025-06-19,jueves,False,False,parcialmente nublado,27.8,34,184,Remanzo Azul
+2025-06-20,viernes,False,False,soleado,29.3,3,240,Remanzo Azul
+2025-06-21,sábado,True,False,parcialmente nublado,28.7,33,241,Remanzo Azul
+2025-06-22,domingo,True,False,soleado,28.4,6,423,Remanzo Azul
+2025-06-23,lunes,False,False,lluvioso,25.2,72,77,Remanzo Azul
+2025-06-24,martes,False,False,soleado,31.2,6,223,Remanzo Azul
+2025-06-25,miércoles,False,False,soleado,28.4,2,235,Remanzo Azul
+2025-06-26,jueves,False,False,parcialmente nublado,27.4,23,214,Remanzo Azul
+2025-06-27,viernes,False,False,soleado,30.2,5,251,Remanzo Azul
+2025-06-28,sábado,True,False,soleado,29.0,3,442,Remanzo Azul
+2025-06-29,domingo,True,True,soleado,29.9,1,888,Remanzo Azul
+2025-06-30,lunes,False,False,nublado,26.7,31,161,Remanzo Azul
+2025-07-01,martes,False,False,parcialmente nublado,28.4,14,210,Remanzo Azul
+2025-07-02,miércoles,False,False,lluvioso,25.3,84,105,Remanzo Azul
+2025-07-03,jueves,False,False,nublado,25.6,30,141,Remanzo Azul
+2025-07-04,viernes,False,False,nublado,25.1,41,169,Remanzo Azul
+2025-07-05,sábado,True,False,parcialmente nublado,27.7,14,314,Remanzo Azul
+2025-07-06,domingo,True,False,nublado,28.7,41,284,Remanzo Azul
+2025-07-07,lunes,False,False,soleado,28.6,8,245,Remanzo Azul
+2025-07-08,martes,False,False,parcialmente nublado,28.6,26,192,Remanzo Azul
+2025-07-09,miércoles,False,False,nublado,25.6,57,186,Remanzo Azul
+2025-07-10,jueves,False,False,soleado,29.8,0,266,Remanzo Azul
+2025-07-11,viernes,False,False,parcialmente nublado,25.4,28,174,Remanzo Azul
+2025-07-12,sábado,True,False,parcialmente nublado,28.4,17,350,Remanzo Azul
+2025-07-13,domingo,True,False,lluvioso,24.9,64,173,Remanzo Azul
+2025-07-14,lunes,False,False,soleado,28.0,4,231,Remanzo Azul
+2025-07-15,martes,False,False,soleado,26.6,6,235,Remanzo Azul
+2025-07-16,miércoles,False,False,soleado,29.5,3,208,Remanzo Azul
+2025-07-17,jueves,False,False,parcialmente nublado,25.8,15,223,Remanzo Azul
+2025-07-18,viernes,False,False,soleado,28.3,1,245,Remanzo Azul
+2025-07-19,sábado,True,False,nublado,24.4,56,294,Remanzo Azul
+2025-07-20,domingo,True,False,soleado,26.2,9,419,Remanzo Azul
+2025-07-21,lunes,False,False,lluvioso,24.8,64,97,Remanzo Azul
+2025-07-22,martes,False,False,parcialmente nublado,25.8,19,206,Remanzo Azul
+2025-07-23,miércoles,False,False,soleado,28.6,3,261,Remanzo Azul
+2025-07-24,jueves,False,False,soleado,29.5,1,224,Remanzo Azul
+2025-07-25,viernes,False,False,parcialmente nublado,28.0,32,231,Remanzo Azul
+2025-07-26,sábado,True,False,parcialmente nublado,25.3,27,340,Remanzo Azul
+2025-07-27,domingo,True,False,soleado,28.3,2,365,Remanzo Azul
+2025-07-28,lunes,False,True,soleado,26.9,5,587,Remanzo Azul
+2025-07-29,martes,False,True,soleado,28.3,7,581,Remanzo Azul
+2025-07-30,miércoles,False,False,soleado,26.9,1,247,Remanzo Azul
+2025-07-31,jueves,False,False,nublado,22.8,36,177,Remanzo Azul
+2025-08-01,viernes,False,False,soleado,26.6,1,236,Remanzo Azul
+2025-08-02,sábado,True,False,soleado,26.3,1,431,Remanzo Azul
+2025-08-03,domingo,True,False,soleado,26.5,1,493,Remanzo Azul
+2025-08-04,lunes,False,False,nublado,24.8,37,177,Remanzo Azul
+2025-08-05,martes,False,False,soleado,25.3,4,210,Remanzo Azul
+2025-08-06,miércoles,False,False,parcialmente nublado,25.4,11,208,Remanzo Azul
+2025-08-07,jueves,False,False,nublado,24.1,35,159,Remanzo Azul
+2025-08-08,viernes,False,False,nublado,26.3,41,126,Remanzo Azul
+2025-08-09,sábado,True,False,lluvioso,22.6,66,148,Remanzo Azul
+2025-08-10,domingo,True,False,lluvioso,23.2,78,150,Remanzo Azul
+2025-08-11,lunes,False,False,soleado,27.2,6,218,Remanzo Azul
+2025-08-12,martes,False,False,soleado,28.4,4,179,Remanzo Azul
+2025-08-13,miércoles,False,False,parcialmente nublado,23.8,20,209,Remanzo Azul
+2025-08-14,jueves,False,False,tormenta,21.6,97,42,Remanzo Azul
+2025-08-15,viernes,False,False,parcialmente nublado,27.5,31,233,Remanzo Azul
+2025-08-16,sábado,True,False,nublado,26.0,49,282,Remanzo Azul
+2025-08-17,domingo,True,False,parcialmente nublado,25.1,19,397,Remanzo Azul
+2025-08-18,lunes,False,False,parcialmente nublado,26.5,11,177,Remanzo Azul
+2025-08-19,martes,False,False,parcialmente nublado,25.3,17,203,Remanzo Azul
+2025-08-20,miércoles,False,False,soleado,28.2,0,194,Remanzo Azul
+2025-08-21,jueves,False,False,parcialmente nublado,23.9,22,175,Remanzo Azul
+2025-08-22,viernes,False,False,soleado,28.0,0,273,Remanzo Azul
+2025-08-23,sábado,True,False,soleado,25.2,9,469,Remanzo Azul
+2025-08-24,domingo,True,False,parcialmente nublado,26.0,23,483,Remanzo Azul
+2025-08-25,lunes,False,False,soleado,27.0,7,250,Remanzo Azul
+2025-08-26,martes,False,False,parcialmente nublado,25.6,31,218,Remanzo Azul
+2025-08-27,miércoles,False,False,parcialmente nublado,24.4,16,208,Remanzo Azul
+2025-08-28,jueves,False,False,parcialmente nublado,25.8,32,205,Remanzo Azul
+2025-08-29,viernes,False,False,lluvioso,25.1,74,107,Remanzo Azul
+2025-08-30,sábado,True,True,nublado,22.5,43,729,Remanzo Azul
+2025-08-31,domingo,True,False,soleado,27.3,9,440,Remanzo Azul
+2025-09-01,lunes,False,False,parcialmente nublado,27.5,22,190,Remanzo Azul
+2025-09-02,martes,False,False,parcialmente nublado,24.7,23,187,Remanzo Azul
+2025-09-03,miércoles,False,False,soleado,23.8,6,242,Remanzo Azul
+2025-09-04,jueves,False,False,nublado,24.4,53,164,Remanzo Azul
+2025-09-05,viernes,False,False,parcialmente nublado,26.0,26,186,Remanzo Azul
+2025-09-06,sábado,True,False,parcialmente nublado,25.7,24,343,Remanzo Azul
+2025-09-07,domingo,True,False,parcialmente nublado,23.3,25,343,Remanzo Azul
+2025-09-08,lunes,False,False,parcialmente nublado,25.0,34,210,Remanzo Azul
+2025-09-09,martes,False,False,parcialmente nublado,23.4,25,245,Remanzo Azul
+2025-09-10,miércoles,False,False,soleado,27.3,5,311,Remanzo Azul
+2025-09-11,jueves,False,False,parcialmente nublado,24.7,16,194,Remanzo Azul
+2025-09-12,viernes,False,False,parcialmente nublado,24.5,19,198,Remanzo Azul
+2025-09-13,sábado,True,False,lluvioso,20.6,69,152,Remanzo Azul
+2025-09-14,domingo,True,False,nublado,23.7,51,302,Remanzo Azul
+2025-09-15,lunes,False,False,nublado,21.9,35,188,Remanzo Azul
+2025-09-16,martes,False,False,soleado,27.6,0,242,Remanzo Azul
+2025-09-17,miércoles,False,False,nublado,22.9,49,135,Remanzo Azul
+2025-09-18,jueves,False,False,soleado,26.9,6,223,Remanzo Azul
+2025-09-19,viernes,False,False,soleado,26.2,6,246,Remanzo Azul
+2025-09-20,sábado,True,False,soleado,27.7,6,448,Remanzo Azul
+2025-09-21,domingo,True,False,soleado,26.8,6,382,Remanzo Azul
+2025-09-22,lunes,False,False,soleado,25.5,4,274,Remanzo Azul
+2025-09-23,martes,False,False,lluvioso,23.0,63,85,Remanzo Azul
+2025-09-24,miércoles,False,False,tormenta,18.7,99,49,Remanzo Azul
+2025-09-25,jueves,False,False,nublado,24.5,42,145,Remanzo Azul
+2025-09-26,viernes,False,False,soleado,26.5,3,192,Remanzo Azul
+2025-09-27,sábado,True,False,soleado,26.4,4,350,Remanzo Azul
+2025-09-28,domingo,True,False,soleado,24.5,9,476,Remanzo Azul
+2025-09-29,lunes,False,False,soleado,26.6,3,250,Remanzo Azul
+2025-09-30,martes,False,False,nublado,20.0,30,164,Remanzo Azul
+2025-10-01,miércoles,False,False,soleado,24.7,2,229,Remanzo Azul
+2025-10-02,jueves,False,False,parcialmente nublado,24.9,26,212,Remanzo Azul
+2025-10-03,viernes,False,False,parcialmente nublado,24.6,19,241,Remanzo Azul
+2025-10-04,sábado,True,False,lluvioso,21.2,64,180,Remanzo Azul
+2025-10-05,domingo,True,False,nublado,26.0,55,288,Remanzo Azul
+2025-10-06,lunes,False,False,soleado,28.6,2,253,Remanzo Azul
+2025-10-07,martes,False,False,soleado,26.7,9,271,Remanzo Azul
+2025-10-08,miércoles,False,True,lluvioso,22.9,68,230,Remanzo Azul
+2025-10-09,jueves,False,False,parcialmente nublado,24.4,24,186,Remanzo Azul
+2025-10-10,viernes,False,False,nublado,23.5,35,145,Remanzo Azul
+2025-10-11,sábado,True,False,lluvioso,20.9,70,157,Remanzo Azul
+2025-10-12,domingo,True,False,soleado,26.2,0,401,Remanzo Azul
+2025-10-13,lunes,False,False,soleado,26.6,7,251,Remanzo Azul
+2025-10-14,martes,False,False,soleado,25.6,3,218,Remanzo Azul
+2025-10-15,miércoles,False,False,soleado,26.5,7,271,Remanzo Azul
+2025-10-16,jueves,False,False,nublado,24.2,55,155,Remanzo Azul
+2025-10-17,viernes,False,False,soleado,24.9,9,262,Remanzo Azul
+2025-10-18,sábado,True,False,soleado,26.0,9,323,Remanzo Azul
+2025-10-19,domingo,True,False,lluvioso,22.9,86,133,Remanzo Azul
+2025-10-20,lunes,False,False,parcialmente nublado,25.1,30,218,Remanzo Azul
+2025-10-21,martes,False,False,lluvioso,21.9,69,95,Remanzo Azul
+2025-10-22,miércoles,False,False,soleado,26.8,6,220,Remanzo Azul
+2025-10-23,jueves,False,False,lluvioso,22.6,67,105,Remanzo Azul
+2025-10-24,viernes,False,False,parcialmente nublado,24.6,20,236,Remanzo Azul
+2025-10-25,sábado,True,False,soleado,27.8,1,462,Remanzo Azul
+2025-10-26,domingo,True,False,nublado,24.5,30,315,Remanzo Azul
+2025-10-27,lunes,False,False,parcialmente nublado,24.1,32,215,Remanzo Azul
+2025-10-28,martes,False,False,tormenta,20.8,85,43,Remanzo Azul
+2025-10-29,miércoles,False,False,parcialmente nublado,24.1,18,211,Remanzo Azul
+2025-10-30,jueves,False,False,tormenta,21.9,96,43,Remanzo Azul
+2025-10-31,viernes,False,False,lluvioso,22.5,69,92,Remanzo Azul
+2025-11-01,sábado,True,True,parcialmente nublado,24.6,24,596,Remanzo Azul
+2025-11-02,domingo,True,False,parcialmente nublado,25.2,19,398,Remanzo Azul
+2025-11-03,lunes,False,False,soleado,25.2,6,268,Remanzo Azul
+2025-11-04,martes,False,False,parcialmente nublado,24.8,24,170,Remanzo Azul
+2025-11-05,miércoles,False,False,soleado,27.8,0,222,Remanzo Azul
+2025-11-06,jueves,False,False,parcialmente nublado,25.1,34,190,Remanzo Azul
+2025-11-07,viernes,False,False,parcialmente nublado,25.6,15,207,Remanzo Azul
+2025-11-08,sábado,True,False,soleado,27.4,4,360,Remanzo Azul
+2025-11-09,domingo,True,False,parcialmente nublado,25.7,27,344,Remanzo Azul
+2025-11-10,lunes,False,False,parcialmente nublado,23.6,23,153,Remanzo Azul
+2025-11-11,martes,False,False,lluvioso,22.8,70,101,Remanzo Azul
+2025-11-12,miércoles,False,False,tormenta,20.1,99,53,Remanzo Azul
+2025-11-13,jueves,False,False,soleado,24.5,8,252,Remanzo Azul
+2025-11-14,viernes,False,False,tormenta,20.8,95,45,Remanzo Azul
+2025-11-15,sábado,True,False,parcialmente nublado,24.7,14,330,Remanzo Azul
+2025-11-16,domingo,True,False,soleado,28.3,5,419,Remanzo Azul
+2025-11-17,lunes,False,False,parcialmente nublado,26.6,29,205,Remanzo Azul
+2025-11-18,martes,False,False,parcialmente nublado,25.6,28,242,Remanzo Azul
+2025-11-19,miércoles,False,False,nublado,25.3,59,150,Remanzo Azul
+2025-11-20,jueves,False,False,soleado,25.6,3,287,Remanzo Azul
+2025-11-21,viernes,False,False,parcialmente nublado,26.4,29,204,Remanzo Azul
+2025-11-22,sábado,True,False,parcialmente nublado,24.2,22,417,Remanzo Azul
+2025-11-23,domingo,True,False,nublado,23.2,46,277,Remanzo Azul
+2025-11-24,lunes,False,False,soleado,27.2,5,289,Remanzo Azul
+2025-11-25,martes,False,False,parcialmente nublado,26.5,26,198,Remanzo Azul
+2025-11-26,miércoles,False,False,soleado,26.7,4,275,Remanzo Azul
+2025-11-27,jueves,False,False,parcialmente nublado,26.5,32,204,Remanzo Azul
+2025-11-28,viernes,False,False,lluvioso,22.3,73,97,Remanzo Azul
+2025-11-29,sábado,True,False,lluvioso,22.4,83,158,Remanzo Azul
+2025-11-30,domingo,True,False,nublado,27.1,38,278,Remanzo Azul
+2025-12-01,lunes,False,False,parcialmente nublado,24.8,25,144,Remanzo Azul
+2025-12-02,martes,False,False,soleado,27.3,3,239,Remanzo Azul
+2025-12-03,miércoles,False,False,tormenta,24.0,91,37,Remanzo Azul
+2025-12-04,jueves,False,False,lluvioso,21.8,89,85,Remanzo Azul
+2025-12-05,viernes,False,False,soleado,29.6,4,266,Remanzo Azul
+2025-12-06,sábado,True,False,soleado,27.5,3,430,Remanzo Azul
+2025-12-07,domingo,True,False,lluvioso,22.9,63,165,Remanzo Azul
+2025-12-08,lunes,False,True,lluvioso,24.6,70,183,Remanzo Azul
+2025-12-09,martes,False,False,tormenta,22.4,98,48,Remanzo Azul
+2025-12-10,miércoles,False,False,tormenta,23.2,93,42,Remanzo Azul
+2025-12-11,jueves,False,False,parcialmente nublado,25.9,32,229,Remanzo Azul
+2025-12-12,viernes,False,False,soleado,27.3,0,265,Remanzo Azul
+2025-12-13,sábado,True,False,parcialmente nublado,29.0,24,312,Remanzo Azul
+2025-12-14,domingo,True,False,soleado,28.2,7,453,Remanzo Azul
+2025-12-15,lunes,False,False,soleado,28.0,3,244,Remanzo Azul
+2025-12-16,martes,False,False,nublado,23.9,49,180,Remanzo Azul
+2025-12-17,miércoles,False,False,soleado,29.6,1,192,Remanzo Azul
+2025-12-18,jueves,False,False,tormenta,23.2,97,34,Remanzo Azul
+2025-12-19,viernes,False,False,parcialmente nublado,27.4,20,212,Remanzo Azul
+2025-12-20,sábado,True,False,lluvioso,23.1,87,144,Remanzo Azul
+2025-12-21,domingo,True,False,tormenta,23.6,98,67,Remanzo Azul
+2025-12-22,lunes,False,False,lluvioso,24.5,66,90,Remanzo Azul
+2025-12-23,martes,False,False,parcialmente nublado,26.0,19,219,Remanzo Azul
+2025-12-24,miércoles,False,False,nublado,25.2,30,169,Remanzo Azul
+2025-12-25,jueves,False,True,parcialmente nublado,27.4,15,493,Remanzo Azul
+2025-12-26,viernes,False,False,nublado,25.8,31,167,Remanzo Azul
+2025-12-27,sábado,True,False,nublado,27.7,49,246,Remanzo Azul
+2025-12-28,domingo,True,False,parcialmente nublado,29.1,30,392,Remanzo Azul
+2025-12-29,lunes,False,False,lluvioso,25.5,86,96,Remanzo Azul
+2025-12-30,martes,False,False,soleado,29.2,7,243,Remanzo Azul
+2025-12-31,miércoles,False,False,parcialmente nublado,27.3,12,158,Remanzo Azul

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrediRemanzoAzul — Predicción de Afluencia Turística</title>
+  <meta name="description" content="Sistema inteligente de predicción de visitantes para El Remanzo Azul, basado en meteorología en tiempo real y comportamiento histórico.">
+  
+  <!-- Tipografía moderna Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js para visualización de tendencias -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #070d18;
+      --bg-card: rgba(15, 23, 42, 0.75);
+      --bg-card-hover: rgba(30, 41, 59, 0.85);
+      --primary: #0ea5e9;
+      --primary-gradient: linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #06b6d4 100%);
+      --accent: #06b6d4;
+      --accent-glow: rgba(14, 165, 233, 0.35);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(56, 189, 248, 0.4);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.12) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(30, 58, 138, 0.15) 0px, transparent 65%);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, .brand-font {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    header {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(7, 13, 24, 0.85);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 1rem 2rem;
+    }
+
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #fff;
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .brand-text h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.8rem;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+      color: #34d399;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+
+    main {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Grid principal */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 960px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Tarjetas Glassmorphism */
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .card-hero {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.9) 0%, rgba(12, 74, 110, 0.35) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(14, 165, 233, 0.15);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Tarjetón de Predicción */
+    .prediction-metric {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+
+    .huge-number {
+      font-size: 4.25rem;
+      font-weight: 800;
+      line-height: 1;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.04em;
+    }
+
+    .metric-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .confidence-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .conf-alta { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .conf-media { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .conf-baja { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+    .afluencia-badge {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+    }
+
+    .afluencia-Pico { background: rgba(236, 72, 153, 0.2); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.4); }
+    .afluencia-Alta { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .afluencia-Moderada { background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.4); }
+    .afluencia-Baja { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.4); }
+
+    .factors-list {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .factor-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--primary);
+    }
+
+    /* Tarjeta Clima Actual */
+    .weather-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1.5rem 0;
+    }
+
+    .weather-temp {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .weather-temp span {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+    }
+
+    .weather-icon-large {
+      font-size: 3.5rem;
+      filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.4));
+    }
+
+    .weather-grid-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .w-stat {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .w-stat-val {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .w-stat-lbl {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Simulador */
+    .simulator-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 800px) {
+      .simulator-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.1rem;
+    }
+
+    .form-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control, select {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-control:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+    }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .checkbox-label input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+    }
+
+    /* Sección de Pronóstico y Gráficas */
+    .forecast-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .day-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s, border-color 0.2s;
+    }
+
+    .day-card:hover {
+      background: rgba(14, 165, 233, 0.1);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .day-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: capitalize;
+    }
+
+    .day-icon {
+      font-size: 2rem;
+      margin: 0.4rem 0;
+    }
+
+    .day-temp {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .day-temp-min {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Tabla Histórica */
+    .table-container {
+      overflow-x: auto;
+      margin-top: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(15, 23, 42, 0.85);
+      color: var(--text-muted);
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-top: 1px solid var(--border);
+      color: #cbd5e1;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    footer {
+      max-width: 1300px;
+      margin: 3rem auto 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado / Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">RA</div>
+        <div class="brand-text">
+          <h1>PrediRemanzoAzul</h1>
+          <span>Afluencia Turística • Remanzo Azul</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <span class="pill-badge" id="api-status-pill">
+          <span class="pill-dot"></span>
+          <span id="api-status-text">Conectado</span>
+        </span>
+        <a href="/docs" target="_blank">Swagger Docs</a>
+        <a href="/openapi.json" target="_blank">OpenAPI JSON</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#historico">Histórico</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Grid Principal: Predicción de Hoy y Clima Actual -->
+    <div class="dashboard-grid">
+      <!-- Tarjeta 1: Predicción de Hoy -->
+      <div class="card card-hero">
+        <div class="card-header">
+          <div>
+            <div class="card-title">
+              <span>🎯 Predicción de Afluencia para Hoy</span>
+              <span id="badge-afluencia" class="afluencia-badge afluencia-Alta">Alta</span>
+            </div>
+            <div class="card-subtitle" id="fecha-prediccion-hoy">Cargando fecha...</div>
+          </div>
+          <span id="badge-confianza" class="confidence-badge conf-alta">Confianza Alta</span>
+        </div>
+
+        <div class="prediction-metric">
+          <div class="huge-number" id="visitantes-estimados">--</div>
+          <div class="metric-label">personas estimadas hoy</div>
+        </div>
+
+        <p style="font-size: 0.9rem; color: #94a3b8;">
+          Intervalo proyectado: <strong id="rango-visitantes" style="color: #f8fafc;">-- a -- visitantes</strong> 
+          • Zona: <strong style="color: var(--primary);">El Remanzo Azul</strong>
+        </p>
+
+        <div class="factors-list" id="factores-clave-list">
+          <div class="factor-item">Analizando condiciones meteorológicas y estadísticas históricas...</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Clima Actual -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">🌦️ Clima en Remanzo Azul</div>
+            <div class="card-subtitle" id="clima-fuente">Fuente: Verificando...</div>
+          </div>
+          <span id="clima-desc-tag" style="font-size: 0.8rem; background: rgba(14,165,233,0.15); color: var(--primary); padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 600;">En vivo</span>
+        </div>
+
+        <div class="weather-row">
+          <div class="weather-temp" id="clima-temperatura">--<span>°C</span></div>
+          <div class="weather-icon-large" id="clima-icono">☀️</div>
+        </div>
+
+        <p id="clima-estado-texto" style="font-weight: 600; font-size: 1.1rem; text-transform: capitalize; color: #f1f5f9;">Soleado</p>
+
+        <div class="weather-grid-details">
+          <div class="w-stat">
+            <div class="w-stat-val" id="clima-prob-lluvia">--%</div>
+            <div class="w-stat-lbl">Prob. Lluvia</div>
+          </div>
+          <div class="w-stat">
+            <div class="w-stat-val" id="clima-humedad">--%</div>
+            <div class="w-stat-lbl">Humedad</div>
+          </div>
+          <div class="w-stat">
+            <div class="w-stat-val" id="clima-viento">-- km/h</div>
+            <div class="w-stat-lbl">Viento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Pronóstico Extendido & Tendencia -->
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">📅 Pronóstico y Proyección de Afluencia Próximos Días</div>
+          <div class="card-subtitle">Haz clic en cualquier día para calcular su afluencia estimada automáticamente</div>
+        </div>
+      </div>
+      <div class="forecast-cards" id="forecast-days-container">
+        <!-- Renderizado dinámico -->
+      </div>
+      <div style="height: 240px; margin-top: 1.5rem;">
+        <canvas id="forecastChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Sección Simulador What-If -->
+    <div class="card" id="simulador">
+      <div class="card-header">
+        <div>
+          <div class="card-title">🧪 Simulador Interactivo "What-If"</div>
+          <div class="card-subtitle">¿Qué ocurre con la afluencia si el clima cambia drásticamente? Prueba escenarios en tiempo real.</div>
+        </div>
+      </div>
+
+      <div class="simulator-container">
+        <!-- Controles -->
+        <div>
+          <div class="form-group">
+            <div class="form-label">
+              <span>Estado del Clima</span>
+            </div>
+            <select id="sim-clima" class="form-control" onchange="ejecutarSimulacion()">
+              <option value="soleado">Soleado (Cielo despejado)</option>
+              <option value="parcialmente nublado">Parcialmente Nublado</option>
+              <option value="nublado">Nublado / Cubierto</option>
+              <option value="lluvioso">Lluvioso / Chubascos</option>
+              <option value="tormenta">Tormenta Eléctrica</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <span>Temperatura</span>
+              <span id="sim-temp-val" style="color: var(--primary); font-weight: 700;">27.0 °C</span>
+            </div>
+            <input type="range" id="sim-temp" min="15" max="38" step="0.5" value="27" oninput="actualizarSlider('sim-temp', 'sim-temp-val', ' °C'); ejecutarSimulacion();">
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <span>Probabilidad de Lluvia</span>
+              <span id="sim-lluvia-val" style="color: var(--primary); font-weight: 700;">10 %</span>
+            </div>
+            <input type="range" id="sim-lluvia" min="0" max="100" step="5" value="10" oninput="actualizarSlider('sim-lluvia', 'sim-lluvia-val', ' %'); ejecutarSimulacion();">
+          </div>
+
+          <div style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+            <label class="checkbox-label">
+              <input type="checkbox" id="sim-finde" checked onchange="ejecutarSimulacion()">
+              <span>Fin de semana</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="sim-feriado" onchange="ejecutarSimulacion()">
+              <span>Día Feriado / Festivo</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Resultado Simulado -->
+        <div style="background: rgba(14, 165, 233, 0.05); border: 1px dashed rgba(56, 189, 248, 0.3); border-radius: var(--radius-sm); padding: 1.5rem; text-align: center;">
+          <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Afluencia Estimada Simulada</div>
+          <div class="huge-number" id="sim-resultado" style="font-size: 3.8rem; margin: 0.5rem 0;">--</div>
+          <div id="sim-nivel-badge" class="afluencia-badge afluencia-Alta" style="display: inline-block;">Alta Afluencia</div>
+          <p id="sim-rango" style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.75rem;">Rango esperado: -- a -- visitantes</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Explorador Histórico -->
+    <div class="card" id="historico">
+      <div class="card-header">
+        <div>
+          <div class="card-title">📊 Explorador del Histórico de Visitas</div>
+          <div class="card-subtitle">1,096 registros de visitas recopilados entre 2023 y 2025 para calibración del modelo</div>
+        </div>
+        <div id="stats-summary" style="font-size: 0.85rem; color: var(--text-muted);">
+          Promedio general: <strong id="stat-promedio" style="color: var(--primary);">--</strong> visitantes/día
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <select id="filtro-clima" class="form-control" style="max-width: 200px;" onchange="cargarHistorico()">
+          <option value="">Todos los climas</option>
+          <option value="soleado">Soleado</option>
+          <option value="parcialmente nublado">Parcialmente nublado</option>
+          <option value="nublado">Nublado</option>
+          <option value="lluvioso">Lluvioso</option>
+          <option value="tormenta">Tormenta</option>
+        </select>
+        <select id="filtro-dia" class="form-control" style="max-width: 200px;" onchange="cargarHistorico()">
+          <option value="">Todos los días</option>
+          <option value="true">Solo Fines de Semana</option>
+          <option value="false">Solo Días Laborales</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Día</th>
+              <th>Clima</th>
+              <th>Temperatura</th>
+              <th>Prob. Lluvia</th>
+              <th>Visitantes Registrados</th>
+              <th>Tipo</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-historico-body">
+            <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Cargando registros históricos...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>PrediRemanzoAzul</strong> — Módulo de Inteligencia de Afluencia Turística.</p>
+    <p style="margin-top: 0.3rem;">Desplegable en <strong>AWS EC2</strong> con CI/CD automatizado vía <strong>GitHub Actions</strong>.</p>
+  </footer>
+
+  <script>
+    let chartInstance = null;
+
+    function getIconForWeather(estado) {
+      const e = (estado || '').toLowerCase();
+      if (e.includes('tormenta')) return '⛈️';
+      if (e.includes('lluv') || e.includes('chubasco')) return '🌧️';
+      if (e.includes('parcial')) return '⛅';
+      if (e.includes('nublado') || e.includes('cubierto')) return '☁️';
+      return '☀️';
+    }
+
+    function actualizarSlider(idInput, idOutput, sufijo) {
+      document.getElementById(idOutput).innerText = document.getElementById(idInput).value + sufijo;
+    }
+
+    // 1. Cargar Predicción de Hoy
+    async function cargarPrediccionHoy() {
+      try {
+        const res = await fetch('/prediccion/hoy');
+        if (!res.ok) throw new Error('Error en API');
+        const data = await res.json();
+
+        document.getElementById('visitantes-estimados').innerText = data.visitantes_estimados;
+        document.getElementById('fecha-prediccion-hoy').innerText = `${data.dia_semana.toUpperCase()}, ${data.fecha}`;
+        document.getElementById('rango-visitantes').innerText = `${data.rango_estimado.min} a ${data.rango_estimado.max} visitantes`;
+
+        const badgeAfluencia = document.getElementById('badge-afluencia');
+        badgeAfluencia.innerText = data.nivel_afluencia + ' Afluencia';
+        badgeAfluencia.className = `afluencia-badge afluencia-${data.nivel_afluencia}`;
+
+        const badgeConfianza = document.getElementById('badge-confianza');
+        badgeConfianza.innerText = `Confianza ${data.confianza.toUpperCase()}`;
+        badgeConfianza.className = `confidence-badge conf-${data.confianza}`;
+
+        const listaFactores = document.getElementById('factores-clave-list');
+        listaFactores.innerHTML = '';
+        data.factores_clave.forEach(f => {
+          const div = document.createElement('div');
+          div.className = 'factor-item';
+          div.innerHTML = `<span>📌</span><span>${f}</span>`;
+          listaFactores.appendChild(div);
+        });
+      } catch (err) {
+        console.error('Error cargando predicción de hoy:', err);
+      }
+    }
+
+    // 2. Cargar Clima Actual
+    async function cargarClimaActual() {
+      try {
+        const res = await fetch('/clima/actual');
+        if (!res.ok) throw new Error('Error al cargar clima');
+        const data = await res.json();
+
+        document.getElementById('clima-temperatura').innerHTML = `${data.temperatura_c}<span>°C</span>`;
+        document.getElementById('clima-icono').innerText = getIconForWeather(data.estado);
+        document.getElementById('clima-estado-texto').innerText = data.descripcion || data.estado;
+        document.getElementById('clima-prob-lluvia').innerText = `${data.probabilidad_lluvia_pct}%`;
+        document.getElementById('clima-humedad').innerText = data.humedad_relativa_pct ? `${data.humedad_relativa_pct}%` : '65%';
+        document.getElementById('clima-viento').innerText = data.viento_kmh ? `${data.viento_kmh} km/h` : '12 km/h';
+        document.getElementById('clima-fuente').innerText = `Fuente: ${data.fuente}`;
+      } catch (err) {
+        console.error('Error cargando clima:', err);
+      }
+    }
+
+    // 3. Pronóstico de Próximos Días & Gráfica
+    async function cargarPronostico() {
+      try {
+        const res = await fetch('/clima/proximos-dias?days=7');
+        if (!res.ok) throw new Error('Error');
+        const dias = await res.json();
+
+        const container = document.getElementById('forecast-days-container');
+        container.innerHTML = '';
+
+        const labels = [];
+        const tempsMax = [];
+        const prediccionesEstimadas = [];
+
+        for (const dia of dias) {
+          const card = document.createElement('div');
+          card.className = 'day-card';
+          card.innerHTML = `
+            <div class="day-name">${dia.fecha.slice(5)}</div>
+            <div class="day-icon">${getIconForWeather(dia.estado)}</div>
+            <div class="day-temp">${dia.temperatura_max_c}°</div>
+            <div class="day-temp-min">${dia.temperatura_min_c}° • ${dia.probabilidad_lluvia_pct}% lluvia</div>
+          `;
+          card.onclick = () => consultarFecha(dia.fecha);
+          container.appendChild(card);
+
+          labels.push(dia.fecha.slice(5));
+          tempsMax.push(dia.temperatura_max_c);
+
+          // Estimar afluencia proporcional simple para la gráfica
+          const factorClima = dia.estado === 'soleado' ? 1.3 : (dia.estado === 'lluvioso' ? 0.7 : 1.0);
+          prediccionesEstimadas.push(Math.round(230 * factorClima));
+        }
+
+        renderChart(labels, tempsMax, prediccionesEstimadas);
+      } catch (err) {
+        console.error('Error pronóstico:', err);
+      }
+    }
+
+    function renderChart(labels, temps, visitantes) {
+      const ctx = document.getElementById('forecastChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Afluencia Estimada (visitantes)',
+              data: visitantes,
+              borderColor: '#0ea5e9',
+              backgroundColor: 'rgba(14, 165, 233, 0.15)',
+              fill: true,
+              tension: 0.4,
+              yAxisID: 'y'
+            },
+            {
+              label: 'Temp Máx (°C)',
+              data: temps,
+              borderColor: '#f59e0b',
+              borderDash: [5, 5],
+              fill: false,
+              tension: 0.3,
+              yAxisID: 'y1'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: '#94a3b8' } }
+          },
+          scales: {
+            x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } },
+            y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' }, position: 'left' },
+            y1: { grid: { drawOnChartArea: false }, ticks: { color: '#f59e0b' }, position: 'right' }
+          }
+        }
+      });
+    }
+
+    async function consultarFecha(fecha) {
+      try {
+        const res = await fetch(`/prediccion/fecha?fecha=${fecha}`);
+        const data = await res.json();
+        alert(`Predicción para el ${fecha}:\n• Visitantes Estimados: ${data.visitantes_estimados}\n• Rango: ${data.rango_estimado.min} - ${data.rango_estimado.max}\n• Clima: ${data.clima_estimado.estado} (${data.clima_estimado.temperatura}°C)\n• Nivel: ${data.nivel_afluencia}`);
+      } catch (err) {
+        alert('Error al consultar fecha: ' + err);
+      }
+    }
+
+    // 4. Simulador What-If
+    async function ejecutarSimulacion() {
+      const payload = {
+        clima_estado: document.getElementById('sim-clima').value,
+        temperatura_c: parseFloat(document.getElementById('sim-temp').value),
+        probabilidad_lluvia_pct: parseFloat(document.getElementById('sim-lluvia').value),
+        es_fin_de_semana: document.getElementById('sim-finde').checked,
+        es_feriado: document.getElementById('sim-feriado').checked,
+        dia_semana: document.getElementById('sim-finde').checked ? 'sábado' : 'miércoles'
+      };
+
+      try {
+        const res = await fetch('/prediccion/simulacion', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        document.getElementById('sim-resultado').innerText = data.visitantes_estimados;
+        document.getElementById('sim-rango').innerText = `Rango esperado: ${data.rango_estimado.min} a ${data.rango_estimado.max} visitantes`;
+
+        const badge = document.getElementById('sim-nivel-badge');
+        badge.innerText = data.nivel_afluencia + ' Afluencia';
+        badge.className = `afluencia-badge afluencia-${data.nivel_afluencia}`;
+      } catch (err) {
+        console.error('Error en simulación:', err);
+      }
+    }
+
+    // 5. Histórico de Visitas y Estadísticas
+    async function cargarHistorico() {
+      const clima = document.getElementById('filtro-clima').value;
+      const dia = document.getElementById('filtro-dia').value;
+
+      let url = '/historico?limit=15';
+      if (clima) url += `&clima_estado=${clima}`;
+      if (dia) url += `&es_fin_de_semana=${dia}`;
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        const tbody = document.getElementById('tabla-historico-body');
+        tbody.innerHTML = '';
+
+        data.registros.forEach(r => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><strong>${r.fecha}</strong></td>
+            <td style="text-transform: capitalize;">${r.dia_semana}</td>
+            <td>${getIconForWeather(r.clima_estado)} ${r.clima_estado}</td>
+            <td>${r.temperatura_c}°C</td>
+            <td>${r.probabilidad_lluvia_pct}%</td>
+            <td><strong style="color: var(--primary); font-size: 0.95rem;">${r.cantidad_visitantes}</strong></td>
+            <td>${r.es_feriado ? '🎉 Feriado' : (r.es_fin_de_semana ? '🏖️ Fin de semana' : '💼 Laboral')}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (err) {
+        console.error('Error histórico:', err);
+      }
+    }
+
+    async function cargarEstadisticas() {
+      try {
+        const res = await fetch('/historico/estadisticas');
+        const st = await res.json();
+        document.getElementById('stat-promedio').innerText = `${st.promedio_visitantes}`;
+      } catch (e) {
+        console.error('Error stats:', e);
+      }
+    }
+
+    // Inicializar todo al cargar la página
+    window.addEventListener('DOMContentLoaded', () => {
+      cargarPrediccionHoy();
+      cargarClimaActual();
+      cargarPronostico();
+      ejecutarSimulacion();
+      cargarHistorico();
+      cargarEstadisticas();
+    });
+  </script>
+</body>
+</html>

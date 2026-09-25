@@ -1,0 +1,19 @@
+[Unit]
+Description=PrediRemanzoAzul - Servicio de Prediccion de Afluencia
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/prediremanzoazul
+EnvironmentFile=/opt/prediremanzoazul/.env
+ExecStart=/opt/prediremanzoazul/.venv/bin/python -m uvicorn src.main:app --host 0.0.0.0 --port 8080 --workers 2
+Restart=always
+RestartSec=5s
+
+# Seguridad
+ProtectSystem=full
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,36 @@
+# Entorno virtual y Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+
+# Pruebas y Cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Variables de entorno y secretos
+.env
+*.pem
+*.key
+*.cert
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Builds y empaquetado
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
